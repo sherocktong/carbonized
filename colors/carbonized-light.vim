@@ -6,27 +6,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/carbonized-light.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-default-light.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "fff1d4"
-let s:gui01 = "ebe2d1"
-let s:gui02 = "bfbbb2"
-let s:gui03 = "aba9a4"
-let s:gui04 = "807e7c"
-let s:gui05 = "6b6a69"
-let s:gui06 = "40403f"
+let s:gui00 = "fff8eb"
+let s:gui01 = "f5eee2"
+let s:gui02 = "d4d1cb"
+let s:gui03 = "94928e"
+let s:gui04 = "94928e"
+let s:gui05 = "545351"
+let s:gui06 = "383838"
 let s:gui07 = "2b2b2b"
-let s:gui08 = "ff4161"
-let s:gui09 = "ff8040"
-let s:gui0A = "d49034"
+let s:gui08 = "eb4d68"
+let s:gui09 = "eb824d"
+let s:gui0A = "bf9b30"
 let s:gui0B = "59ab48"
 let s:gui0C = "55ab9d"
-let s:gui0D = "46a4d4"
+let s:gui0D = "609fbf"
 let s:gui0E = "987ad4"
-let s:gui0F = "eb75c4"
+let s:gui0F = "d48ebd"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -57,21 +57,21 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#fff1d4"
-  let g:terminal_color_1 =  "#ff4161"
+  let g:terminal_color_0 =  "#fff8eb"
+  let g:terminal_color_1 =  "#eb4d68"
   let g:terminal_color_2 =  "#59ab48"
-  let g:terminal_color_3 =  "#d49034"
-  let g:terminal_color_4 =  "#46a4d4"
+  let g:terminal_color_3 =  "#bf9b30"
+  let g:terminal_color_4 =  "#609fbf"
   let g:terminal_color_5 =  "#987ad4"
   let g:terminal_color_6 =  "#55ab9d"
-  let g:terminal_color_7 =  "#6b6a69"
-  let g:terminal_color_8 =  "#aba9a4"
-  let g:terminal_color_9 =  "#ff8040"
-  let g:terminal_color_10 = "#ebe2d1"
-  let g:terminal_color_11 = "#bfbbb2"
-  let g:terminal_color_12 = "#807e7c"
-  let g:terminal_color_13 = "#40403f"
-  let g:terminal_color_14 = "#eb75c4"
+  let g:terminal_color_7 =  "#545351"
+  let g:terminal_color_8 =  "#94928e"
+  let g:terminal_color_9 =  "#eb824d"
+  let g:terminal_color_10 = "#f5eee2"
+  let g:terminal_color_11 = "#d4d1cb"
+  let g:terminal_color_12 = "#94928e"
+  let g:terminal_color_13 = "#383838"
+  let g:terminal_color_14 = "#d48ebd"
   let g:terminal_color_15 = "#2b2b2b"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
@@ -84,7 +84,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "carbonized-light"
+let g:colors_name = "base16-default-light"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -137,10 +137,10 @@ call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
-call <sid>hi("LineNr",        s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
+call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("statusline",    s:gui00, s:gui09, s:cterm00, s:cterm09, "none", "")
-call <sid>hi("StatusLineNC",  s:gui09, s:gui01, s:cterm09, s:cterm01, "none", "")
+call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
