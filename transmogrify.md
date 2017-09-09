@@ -34,7 +34,7 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 %s/dc9656/d47546/ |
 %s/f7ca88/ab8b2b/ |
 %s/a1b56c/4c943e/ |
-%s/86c1b9/4a9488/ |
+%s/86c1b9/3e9486/ |
 %s/7cafc2/558eab/ |
 %s/ba8baf/8a6fbf/ |
 %s/a16946/bf80aa/ |
