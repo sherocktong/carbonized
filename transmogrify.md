@@ -53,3 +53,41 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08/WildMenu",      s:gui09, s:gui00, s:cterm09/
 ```
+
+# terminals
+
+## gnome-terminal
+
+```
+# light
+%s/Base 16 Default Dark/carbonized-light/ |
+%s/base-16-default-dark/carbonized-light/ |
+%s/dset background-color "'#181818/dset background-color "'#fff8eb/ |
+%s/dset foreground-color "'#d8d8d8/dset foreground-color "'#404040/ |
+%s/dset bold-color "'#d8d8d8/dset foreground-color "'#404040/ |
+%s/gset string background_color "#181818/gset string background_color "#fff8eb/ |
+%s/gset string foreground_color "#d8d8d8/gset string foreground_color "#404040/ |
+%s/gset string bold_color "#d8d8d8/gset string bold_color "#404040/
+
+# dark
+%s/Base 16 Default Dark/carbonized-dark/ |
+%s/base-16-default-dark/carbonized-dark/ |
+%s/dset background-color "'#181818/dset background-color "'#2b2b2b/ |
+%s/dset foreground-color "'#d8d8d8/dset foreground-color "'#d4d1cb/ |
+%s/dset bold-color "'#d8d8d8/dset foreground-color "'#d4d1cb/ |
+%s/gset string background_color "#181818/gset string background_color "#2b2b2b/ |
+%s/gset string foreground_color "#d8d8d8/gset string foreground_color "#d4d1cb/ |
+%s/gset string bold_color "#d8d8d8/gset string bold_color "#d4d1cb/
+
+# both
+%s/181818/2b2b2b/ |
+%s/585858/807e7a/ |
+%s/d8d8d8/d4d1cb/ |
+%s/f8f8f8/fff8eb/ |
+%s/ab4642/bf5062/ |
+%s/f7ca88/ab8b2b/ |
+%s/a1b56c/4c943e/ |
+%s/86c1b9/3e9486/ |
+%s/7cafc2/558eab/ |
+%s/ba8baf/8a6fbf/
+```
