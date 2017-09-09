@@ -43,6 +43,8 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 
 %s/Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05/Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09/ |
 
+%s/Identifier",   s:gui08, "", s:cterm08, "", "none/Identifier",   s:gui09, "", s:cterm09, "", "bold/ |
+
 %s/Search",        s:gui04, s:gui0A, s:cterm04, s:cterm0A,  "", "")/Search",        s:gui00, s:gui0A, s:cterm00, s:cterm0A,  "", "")/ |
 
 %s/statusline",    s:gui04, s:gui04, s:cterm04, s:cterm04/statusline",    s:gui00, s:gui09, s:cterm00, s:cterm09/ |
@@ -50,6 +52,8 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 %s/StatusLineNC",  s:gui04, s:gui01, s:cterm04, s:cterm01/StatusLineNC",  s:gui05, s:gui01, s:cterm05, s:cterm01/ |
 
 %s/Visual",        "", s:gui04, "", s:cterm04/Visual",        "", s:gui01, "", s:cterm01/ |
+
+%s/VisualNOS",     s:gui08, "", s:cterm08/VisualNOS",     s:gui09, "", s:cterm09/ |
 
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08/WildMenu",      s:gui09, s:gui00, s:cterm09/
 ```
