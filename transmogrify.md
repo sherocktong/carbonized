@@ -22,21 +22,21 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 %s/cterm03,/cterm04,/g |
 
 %s/181818/2b2b2b/ |
-%s/282828/383838/ |
-%s/383838/404040/ |
-%s/585858/807e7a/ |
+%s/282828/4a4a4a/ |
+%s/383838/6b6a69/ |
+%s/585858/807f7d/ |
 %s/b8b8b8/aba9a4/ |
-%s/d8d8d8/d4d1cb/ |
-%s/e8e8e8/ebe4d8/ |
+%s/d8d8d8/bfbdb8/ |
+%s/e8e8e8/e0dace/ |
 %s/f8f8f8/fff8eb/ |
 
 %s/ab4642/bf5062/ |
 %s/dc9656/d47546/ |
-%s/f7ca88/ab8b2b/ |
-%s/a1b56c/4c943e/ |
+%s/f7ca88/ab9838/ |
+%s/a1b56c/609456/ |
 %s/86c1b9/3e9486/ |
-%s/7cafc2/558eab/ |
-%s/ba8baf/8a6fbf/ |
+%s/7cafc2/6393ab/ |
+%s/ba8baf/8572ab/ |
 %s/a16946/bf80aa/ |
 
 %s/Character",    s:gui08, "", s:cterm08/Character",    s:gui09, "", s:cterm09/ |
@@ -53,9 +53,9 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 
 %s/Visual",        "", s:gui04, "", s:cterm04/Visual",        "", s:gui01, "", s:cterm01/ |
 
-%s/VisualNOS",     s:gui08, "", s:cterm08/VisualNOS",     s:gui09, "", s:cterm09/ |
+%s/VisualNOS",     s:gui08, "", s:cterm08/VisualNOS",     s:gui04, "", s:cterm04/ |
 
-%s/WildMenu",      s:gui08, s:gui0A, s:cterm08/WildMenu",      s:gui09, s:gui00, s:cterm09/
+%s/WildMenu",      s:gui08, s:gui0A, s:cterm08, "", ""/WildMenu",      s:gui05, s:gui00, s:cterm05, "", "bold"/
 ```
 
 # terminals

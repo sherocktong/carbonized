@@ -12,20 +12,20 @@ endif
 
 " GUI color definitions
 let s:gui00 = "2b2b2b"
-let s:gui01 = "404040"
-let s:gui02 = "404040"
-let s:gui03 = "807e7a"
+let s:gui01 = "4a4a4a"
+let s:gui02 = "6b6a69"
+let s:gui03 = "807f7d"
 let s:gui04 = "aba9a4"
-let s:gui05 = "d4d1cb"
-let s:gui06 = "ebe4d8"
+let s:gui05 = "bfbdb8"
+let s:gui06 = "e0dace"
 let s:gui07 = "fff8eb"
 let s:gui08 = "bf5062"
 let s:gui09 = "d47546"
-let s:gui0A = "ab8b2b"
-let s:gui0B = "4c943e"
+let s:gui0A = "ab9838"
+let s:gui0B = "609456"
 let s:gui0C = "3e9486"
-let s:gui0D = "558eab"
-let s:gui0E = "8a6fbf"
+let s:gui0D = "6393ab"
+let s:gui0E = "8572ab"
 let s:gui0F = "bf80aa"
 
 " Terminal color definitions
@@ -59,18 +59,18 @@ endif
 if has("nvim")
   let g:terminal_color_0 =  "#2b2b2b"
   let g:terminal_color_1 =  "#bf5062"
-  let g:terminal_color_2 =  "#4c943e"
-  let g:terminal_color_3 =  "#ab8b2b"
-  let g:terminal_color_4 =  "#558eab"
-  let g:terminal_color_5 =  "#8a6fbf"
+  let g:terminal_color_2 =  "#609456"
+  let g:terminal_color_3 =  "#ab9838"
+  let g:terminal_color_4 =  "#6393ab"
+  let g:terminal_color_5 =  "#8572ab"
   let g:terminal_color_6 =  "#3e9486"
-  let g:terminal_color_7 =  "#d4d1cb"
-  let g:terminal_color_8 =  "#807e7a"
+  let g:terminal_color_7 =  "#bfbdb8"
+  let g:terminal_color_8 =  "#807f7d"
   let g:terminal_color_9 =  "#d47546"
-  let g:terminal_color_10 = "#404040"
-  let g:terminal_color_11 = "#404040"
+  let g:terminal_color_10 = "#4a4a4a"
+  let g:terminal_color_11 = "#6b6a69"
   let g:terminal_color_12 = "#aba9a4"
-  let g:terminal_color_13 = "#ebe4d8"
+  let g:terminal_color_13 = "#e0dace"
   let g:terminal_color_14 = "#bf80aa"
   let g:terminal_color_15 = "#fff8eb"
   let g:terminal_color_background = g:terminal_color_0
@@ -130,9 +130,9 @@ call <sid>hi("SpecialKey",    s:gui04, "", s:cterm04, "", "", "")
 call <sid>hi("TooLong",       s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("Visual",        "", s:gui01, "", s:cterm01, "", "")
-call <sid>hi("VisualNOS",     s:gui09, "", s:cterm09, "", "", "")
+call <sid>hi("VisualNOS",     s:gui04, "", s:cterm04, "", "", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("WildMenu",      s:gui09, s:gui00, s:cterm09, "", "", "")
+call <sid>hi("WildMenu",      s:gui05, s:gui00, s:cterm05, "", "bold", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "", "")
