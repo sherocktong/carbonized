@@ -1,8 +1,5 @@
 " vi:syntax=vim
 
-" This enables the coresponding base16-shell script to run so that
-" :colorscheme works in terminals supported by base16-shell scripts
-" User must set this variable in .vimrc
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
@@ -12,16 +9,16 @@ endif
 
 " GUI color definitions
 let s:gui00 = "fff8eb"
-let s:gui01 = "e0dcd3"
-let s:gui02 = "bfbcb6"
-let s:gui03 = "9e9c98"
-let s:gui04 = "7a7a78"
-let s:gui05 = "4a4a4a"
-let s:gui06 = "303030"
+let s:gui01 = "e8e2d5"
+let s:gui02 = "bfbab0"
+let s:gui03 = "9e9a91"
+let s:gui04 = "7a7771"
+let s:gui05 = "4a4844"
+let s:gui06 = "363636"
 let s:gui07 = "1f1f1f"
 let s:gui08 = "bf5062"
 let s:gui09 = "d47546"
-let s:gui0A = "ab9838"
+let s:gui0A = "ab982b"
 let s:gui0B = "609456"
 let s:gui0C = "3e9486"
 let s:gui0D = "6393ab"
@@ -60,17 +57,17 @@ if has("nvim")
   let g:terminal_color_0 =  "#fff8eb"
   let g:terminal_color_1 =  "#bf5062"
   let g:terminal_color_2 =  "#609456"
-  let g:terminal_color_3 =  "#ab9838"
-  let g:terminal_color_4 =  "#bfbdb8"
-  let g:terminal_color_5 =  "#e0dace"
+  let g:terminal_color_3 =  "#ab982b"
+  let g:terminal_color_4 =  "#6393ab"
+  let g:terminal_color_5 =  "#8572ab"
   let g:terminal_color_6 =  "#3e9486"
-  let g:terminal_color_7 =  "#4a4a4a"
-  let g:terminal_color_8 =  "#9e9c98"
+  let g:terminal_color_7 =  "#4a4844"
+  let g:terminal_color_8 =  "#9e9a91"
   let g:terminal_color_9 =  "#d47546"
-  let g:terminal_color_10 = "#e0dcd3"
-  let g:terminal_color_11 = "#bfbcb6"
-  let g:terminal_color_12 = "#7a7a78"
-  let g:terminal_color_13 = "#303030"
+  let g:terminal_color_10 = "#e8e2d5"
+  let g:terminal_color_11 = "#bfbab0"
+  let g:terminal_color_12 = "#7a7771"
+  let g:terminal_color_13 = "#363636"
   let g:terminal_color_14 = "#bf80aa"
   let g:terminal_color_15 = "#1f1f1f"
   let g:terminal_color_background = g:terminal_color_0

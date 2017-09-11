@@ -1,4 +1,4 @@
-# vim files
+## vim files
 
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-light.vim> `c1c3e6c`
@@ -8,12 +8,12 @@
 %s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
-%s/282828/303030/ |
+%s/282828/363636/ |
 %s/383838/4a4a4a/ |
-%s/585858/7a7a78/ |
-%s/b8b8b8/9e9c98/ |
-%s/d8d8d8/bfbcb6/ |
-%s/e8e8e8/e0dcd3/ |
+%s/585858/7a7976/ |
+%s/b8b8b8/9e9a91/ |
+%s/d8d8d8/bfb9ac/ |
+%s/e8e8e8/e6decf/ |
 %s/f8f8f8/fff8eb/ |
 
 %s/ab4642/bf5062/ |
@@ -44,9 +44,9 @@
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/
 ```
 
-# terminals
+## terminals
 
-## gnome-terminal
+### gnome-terminal
 
 ```
 # light
