@@ -6,26 +6,26 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-default-dark.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/carbonized-dark.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00 = "2b2b2b"
-let s:gui01 = "454545"
-let s:gui02 = "6b6a69"
-let s:gui03 = "807f7d"
-let s:gui04 = "aba9a4"
-let s:gui05 = "bfbdb8"
-let s:gui06 = "e6dfd3"
+let s:gui00 = "1f1f1f"
+let s:gui01 = "303030"
+let s:gui02 = "4a4a4a"
+let s:gui03 = "7a7a78"
+let s:gui04 = "9e9c98"
+let s:gui05 = "bfbcb6"
+let s:gui06 = "e0dcd3"
 let s:gui07 = "fff8eb"
 let s:gui08 = "bf5062"
 let s:gui09 = "d47546"
 let s:gui0A = "ab9838"
 let s:gui0B = "609456"
 let s:gui0C = "3e9486"
-let s:gui0D = "6393ab"
-let s:gui0E = "8572ab"
+let s:gui0D = "bfbdb8"
+let s:gui0E = "e0dace"
 let s:gui0F = "bf80aa"
 
 " Terminal color definitions
@@ -57,20 +57,20 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#2b2b2b"
+  let g:terminal_color_0 =  "#1f1f1f"
   let g:terminal_color_1 =  "#bf5062"
   let g:terminal_color_2 =  "#609456"
   let g:terminal_color_3 =  "#ab9838"
-  let g:terminal_color_4 =  "#6393ab"
-  let g:terminal_color_5 =  "#8572ab"
+  let g:terminal_color_4 =  "#bfbdb8"
+  let g:terminal_color_5 =  "#e0dace"
   let g:terminal_color_6 =  "#3e9486"
-  let g:terminal_color_7 =  "#bfbdb8"
-  let g:terminal_color_8 =  "#807f7d"
+  let g:terminal_color_7 =  "#bfbcb6"
+  let g:terminal_color_8 =  "#7a7a78"
   let g:terminal_color_9 =  "#d47546"
-  let g:terminal_color_10 = "#454545"
-  let g:terminal_color_11 = "#6b6a69"
-  let g:terminal_color_12 = "#aba9a4"
-  let g:terminal_color_13 = "#e6dfd3"
+  let g:terminal_color_10 = "#303030"
+  let g:terminal_color_11 = "#4a4a4a"
+  let g:terminal_color_12 = "#9e9c98"
+  let g:terminal_color_13 = "#e0dcd3"
   let g:terminal_color_14 = "#bf80aa"
   let g:terminal_color_15 = "#fff8eb"
   let g:terminal_color_background = g:terminal_color_0
@@ -84,7 +84,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-default-dark"
+let g:colors_name = "carbonized-dark"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -117,31 +117,31 @@ call <sid>hi("Error",         s:gui00, s:gui08, s:cterm00, s:cterm08, "", "")
 call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
 call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("FoldColumn",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
-call <sid>hi("Folded",        s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
+call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
 call <sid>hi("Italic",        "", "", "", "", "none", "")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("MatchParen",    "", s:gui04, "", s:cterm04,  "", "")
+call <sid>hi("MatchParen",    "", s:gui03, "", s:cterm03,  "", "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("Question",      s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Search",        s:gui00, s:gui0A, s:cterm00, s:cterm0A,  "", "")
-call <sid>hi("SpecialKey",    s:gui04, "", s:cterm04, "", "", "")
+call <sid>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("TooLong",       s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("Visual",        "", s:gui01, "", s:cterm01, "", "")
-call <sid>hi("VisualNOS",     s:gui04, "", s:cterm04, "", "", "")
+call <sid>hi("Visual",        "", s:gui02, "", s:cterm02, "", "")
+call <sid>hi("VisualNOS",     "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("WildMenu",      s:gui00, s:gui06, s:cterm00, "", "", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "", "")
-call <sid>hi("NonText",       s:gui04, "", s:cterm04, "", "", "")
+call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("LineNr",        s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
-call <sid>hi("SignColumn",    s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
+call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("statusline",    s:gui00, s:gui09, s:cterm00, s:cterm09, "none", "")
-call <sid>hi("StatusLineNC",  s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
-call <sid>hi("VertSplit",     s:gui04, s:gui04, s:cterm04, s:cterm04, "none", "")
+call <sid>hi("StatusLineNC",  s:gui04, s:gui01, s:cterm04, s:cterm01, "none", "")
+call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
@@ -149,14 +149,14 @@ call <sid>hi("CursorLineNr",  s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
 call <sid>hi("QuickFixLine",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")
 call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm05, "", "")
-call <sid>hi("TabLine",       s:gui04, s:gui01, s:cterm04, s:cterm01, "none", "")
-call <sid>hi("TabLineFill",   s:gui04, s:gui01, s:cterm04, s:cterm01, "none", "")
+call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
+call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", "")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Character",    s:gui09, "", s:cterm09, "", "", "")
-call <sid>hi("Comment",      s:gui04, "", s:cterm04, "", "", "")
+call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
@@ -202,7 +202,7 @@ call <sid>hi("cssColor",       s:gui0C, "", s:cterm0C, "", "", "")
 
 " Diff highlighting
 call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
-call <sid>hi("DiffChange",   s:gui04, s:gui01,  s:cterm04, s:cterm01, "", "")
+call <sid>hi("DiffChange",   s:gui03, s:gui01,  s:cterm03, s:cterm01, "", "")
 call <sid>hi("DiffDelete",   s:gui08, s:gui01,  s:cterm08, s:cterm01, "", "")
 call <sid>hi("DiffText",     s:gui0D, s:gui01,  s:cterm0D, s:cterm01, "", "")
 call <sid>hi("DiffAdded",    s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
@@ -214,10 +214,10 @@ call <sid>hi("DiffRemoved",  s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
 " Git highlighting
 call <sid>hi("gitcommitOverflow",       s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("gitcommitSummary",        s:gui0B, "", s:cterm0B, "", "", "")
-call <sid>hi("gitcommitComment",        s:gui04, "", s:cterm04, "", "", "")
-call <sid>hi("gitcommitUntracked",      s:gui04, "", s:cterm04, "", "", "")
-call <sid>hi("gitcommitDiscarded",      s:gui04, "", s:cterm04, "", "", "")
-call <sid>hi("gitcommitSelected",       s:gui04, "", s:cterm04, "", "", "")
+call <sid>hi("gitcommitComment",        s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitUntracked",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitDiscarded",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("gitcommitSelected",       s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("gitcommitHeader",         s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("gitcommitSelectedType",   s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("gitcommitUnmergedType",   s:gui0D, "", s:cterm0D, "", "", "")
