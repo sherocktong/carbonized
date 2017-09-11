@@ -49,7 +49,7 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 
 %s/VisualNOS",     s:gui08, "", s:cterm08, "", ""/VisualNOS",     "", s:gui01, "", s:cterm01, "none"/ |
 
-%s/WildMenu",      s:gui08, s:gui0A, s:cterm08/WildMenu",      s:gui00, s:gui06, s:cterm00/
+%s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/
 ```
 
 # terminals
