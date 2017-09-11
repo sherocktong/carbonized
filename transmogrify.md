@@ -29,8 +29,8 @@ These are the Vim commands applied to the 'base16-solarized' colour scheme files
 %s/f7ca88/ab9838/ |
 %s/a1b56c/609456/ |
 %s/86c1b9/3e9486/ |
-%s/7cafc2/bfbdb8/ |
-%s/ba8baf/e0dace/ |
+%s/7cafc2/6393ab/ |
+%s/ba8baf/8572ab/ |
 %s/a16946/bf80aa/ |
 
 %s/Character",    s:gui08, "", s:cterm08/Character",    s:gui09, "", s:cterm09/ |
