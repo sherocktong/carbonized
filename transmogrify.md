@@ -1,19 +1,11 @@
-These are the Vim commands applied to the 'base16-solarized' colour scheme files in order to transmogrify them into the carbonized files.
+# vim files
 
-## names
-
-```
-%s/base16-default-light/carbonized-light/
-```
+- <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
+- <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-light.vim> `c1c3e6c`
 
 ```
-%s/base16-default-dark/carbonized-dark/
-```
-
-## main
-
-```
-3 | d4 |
+3,9d |
+%s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
 %s/282828/303030/ |
