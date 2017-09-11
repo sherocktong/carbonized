@@ -23,7 +23,7 @@
 %s/86c1b9/3e9486/ |
 %s/7cafc2/6393ab/ |
 %s/ba8baf/8572ab/ |
-%s/a16946/bf80aa/ |
+%s/a16946/ab7298/ |
 
 %s/Character",    s:gui08, "", s:cterm08/Character",    s:gui09, "", s:cterm09/ |
 

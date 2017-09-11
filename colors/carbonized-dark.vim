@@ -23,7 +23,7 @@ let s:gui0B = "609456"
 let s:gui0C = "3e9486"
 let s:gui0D = "6393ab"
 let s:gui0E = "8572ab"
-let s:gui0F = "bf80aa"
+let s:gui0F = "ab7298"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -68,7 +68,7 @@ if has("nvim")
   let g:terminal_color_11 = "#54524d"
   let g:terminal_color_12 = "#9e9a91"
   let g:terminal_color_13 = "#e8e2d5"
-  let g:terminal_color_14 = "#bf80aa"
+  let g:terminal_color_14 = "#ab7298"
   let g:terminal_color_15 = "#fff8eb"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_7
