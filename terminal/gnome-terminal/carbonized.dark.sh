@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# Base16 Default - Gnome Terminal color scheme install script
-# Chris Kempson (http://chriskempson.com)
 
 [[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="carbonized-dark"
 [[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="carbonized-dark"
@@ -59,10 +57,10 @@ if which "$DCONF" > /dev/null 2>&1; then
 
         # update profile values with theme options
         dset visible-name "'$PROFILE_NAME'"
-        dset palette "['#2b2b2b', '#bf5062', '#4c943e', '#ab8b2b', '#558eab', '#8a6fbf', '#3e9486', '#d4d1cb', '#807e7a', '#ab4642', '#a1b56c', '#f7ca88', '#7cafc2', '#ba8baf', '#86c1b9', '#fff8eb']"
-        dset background-color "'#2b2b2b'"
-        dset foreground-color "'#d4d1cb'"
-        dset foreground-color "'#d4d1cb'"
+        dset palette "['#1f1f1f', '#bf5062', '#609456', '#ab982b', '#6393ab', '#8572ab', '#3e9486', '#aba69d', '#6b6863', '#ab4642', '#a1b56c', '#f7ca88', '#7cafc2', '#ba8baf', '#86c1b9', '#fff8eb']"
+        dset background-color "'#1f1f1f'"
+        dset foreground-color "'#aba69d'"
+        dset bold-color "'#aba69d'"
         dset bold-color-same-as-fg "true"
         dset use-theme-colors "false"
         dset use-theme-background "false"
@@ -109,10 +107,10 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "#2b2b2b:#bf5062:#4c943e:#ab8b2b:#558eab:#8a6fbf:#3e9486:#d4d1cb:#807e7a:#ab4642:#a1b56c:#f7ca88:#7cafc2:#ba8baf:#86c1b9:#fff8eb"
-gset string background_color "#2b2b2b"
-gset string foreground_color "#d4d1cb"
-gset string bold_color "#d4d1cb"
+gset string palette "#1f1f1f:#bf5062:#609456:#ab982b:#6393ab:#8572ab:#3e9486:#aba69d:#6b6863:#ab4642:#a1b56c:#f7ca88:#7cafc2:#ba8baf:#86c1b9:#fff8eb"
+gset string background_color "#1f1f1f"
+gset string foreground_color "#aba69d"
+gset string bold_color "#aba69d"
 gset bool   bold_color_same_as_fg "true"
 gset bool   use_theme_colors "false"
 gset bool   use_theme_background "false"

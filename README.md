@@ -27,3 +27,13 @@ For easy management of Vim colour schemes (and other plugins), try a plugin mana
 To activate the carbonized theme, add one of the following lines to your `vimrc`:
 - `colorscheme carbonized-light`
 - `colorscheme carbonized-dark`
+
+## terminal themes
+
+terminal    | configuration file
+:----------:|:-----------------:
+xterm/urxvt | [`Xresources`](https://github.com/nightsense/carbonized/tree/master/terminal/Xresources) files for **xterm** and **urxvt** (Linux)
+
+-
+
+For **GNOME Terminal**, run the [install script](https://github.com/nightsense/carbonized/tree/master/terminal/gnome-terminal) for the desired carbonized theme to create a "profile" for it. Then set the profile as default via Edit > Preferences > Profiles.

@@ -1,7 +1,7 @@
 ## vim files
 
-- <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-light.vim> `c1c3e6c`
+- <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
 
 ```
 3,9d |
@@ -44,40 +44,33 @@
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/
 ```
 
-## terminals
+## shell
 
-### gnome-terminal
+- <https://github.com/chriskempson/base16-shell/blob/master/scripts/base16-default-dark.sh> `376294b`
 
 ```
-# light
-%s/Base 16 Default Dark/carbonized-light/ |
-%s/base-16-default-dark/carbonized-light/ |
-%s/dset background-color "'#181818/dset background-color "'#fff8eb/ |
-%s/dset foreground-color "'#d8d8d8/dset foreground-color "'#404040/ |
-%s/dset bold-color "'#d8d8d8/dset foreground-color "'#404040/ |
-%s/gset string background_color "#181818/gset string background_color "#fff8eb/ |
-%s/gset string foreground_color "#d8d8d8/gset string foreground_color "#404040/ |
-%s/gset string bold_color "#d8d8d8/gset string bold_color "#404040/
+2,3d |
 
-# dark
-%s/Base 16 Default Dark/carbonized-dark/ |
-%s/base-16-default-dark/carbonized-dark/ |
-%s/dset background-color "'#181818/dset background-color "'#2b2b2b/ |
-%s/dset foreground-color "'#d8d8d8/dset foreground-color "'#d4d1cb/ |
-%s/dset bold-color "'#d8d8d8/dset foreground-color "'#d4d1cb/ |
-%s/gset string background_color "#181818/gset string background_color "#2b2b2b/ |
-%s/gset string foreground_color "#d8d8d8/gset string foreground_color "#d4d1cb/ |
-%s/gset string bold_color "#d8d8d8/gset string bold_color "#d4d1cb/
+%s/Base 16 Default Light/carbonized-light/e |
+%s/base-16-default-light/carbonized-light/e |
+%s/Base 16 Default Dark/carbonized-dark/e |
+%s/base-16-default-dark/carbonized-dark/e |
 
-# both
-%s/181818/2b2b2b/ |
-%s/585858/807e7a/ |
-%s/d8d8d8/d4d1cb/ |
-%s/f8f8f8/fff8eb/ |
-%s/ab4642/bf5062/ |
-%s/f7ca88/ab8b2b/ |
-%s/a1b56c/4c943e/ |
-%s/86c1b9/3e9486/ |
-%s/7cafc2/558eab/ |
-%s/ba8baf/8a6fbf/
+%s/181818/1f1f1f/e |
+%s/282828/363636/e |
+%s/383838/54524d/e |
+%s/585858/6b6863/e |
+%s/b8b8b8/9e9a91/e |
+%s/d8d8d8/aba69d/e |
+%s/e8e8e8/e8e2d5/e |
+%s/f8f8f8/fff8eb/e |
+
+%s/ab4642/bf5062/e |
+%s/dc9656/d47546/e |
+%s/f7ca88/ab982b/e |
+%s/a1b56c/609456/e |
+%s/86c1b9/3e9486/e |
+%s/7cafc2/6393ab/e |
+%s/ba8baf/8572ab/e |
+%s/a16946/ab7298/e
 ```
