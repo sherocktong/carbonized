@@ -5,9 +5,9 @@ A vim theme inspired by the [Carbon keycap set](https://geekhack.org/index.php?t
 ## screenshots
 
 <table>
-<tr></tr><tr><td align="center">**carbonized-<br>light**</td>
+<tr></tr><tr><td align="center"><strong>carbonized-<br>light</strong></td>
 <td align="center"><img src="img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="288"> <img src="img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="288"></td>
-<td align="center">**carbonized-<br>dark**</td></tr>
+<td align="center"><strong>carbonized-<br>dark</strong></td></tr>
 </table>
 
 ## installation
