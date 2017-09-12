@@ -1,6 +1,6 @@
 # carbonized
 
-**carbonized** is a vim/terminal theme inspired by the [Carbon keycap set](https://geekhack.org/index.php?topic=79693.0) by T0mb3ry.
+**carbonized** is a vim theme inspired by the [Carbon keycap set](https://geekhack.org/index.php?topic=79693.0) by T0mb3ry.
 
 ## screenshots
 
@@ -16,24 +16,14 @@
 
 #### option A: manually
 
-Download the desired [colourscheme files](https://github.com/nightsense/carbonized/tree/master/colors) and place in directory `~/.vim/colors/` (Linux/Mac) or `%userprofile%\vimfiles\colors\` (Windows).
+Download the [colourscheme files](https://github.com/nightsense/carbonized/tree/master/colors) and place in directory `~/.vim/colors/` (Linux/Mac) or `%userprofile%\vimfiles\colors\` (Windows).
 
 #### option B: using a plugin manager
 
-For easy management of Vim colour schemes (and other plugins), try a plugin manager. With [vim-plug](https://github.com/junegunn/vim-plug), for instance, just add `Plug 'nightsense/carbonized'` to the list of plugins in `vimrc`, then run `PlugUpdate`.
+For easy management of Vim colour schemes (and other plugins), try a plugin manager. With [vim-plug](https://github.com/junegunn/vim-plug), for instance, just add `Plug 'nightsense/carbonized'` to the list of plugins in your `vimrc`, then run `PlugUpdate`.
 
 ### step 2: activate the colour scheme
 
 To activate the carbonized theme, add one of the following lines to your `vimrc`:
 - `colorscheme carbonized-light`
 - `colorscheme carbonized-dark`
-
-## terminal themes
-
-terminal    | configuration file
-:----------:|:-----------------:
-xterm/urxvt | [`Xresources`](https://github.com/nightsense/carbonized/tree/master/terminal/Xresources) files for **xterm** and **urxvt** (Linux)
-
--
-
-For **GNOME Terminal**, run the [install script](https://github.com/nightsense/carbonized/tree/master/terminal/gnome-terminal) for the desired carbonized theme to create a "profile" for it. Then set the profile as default via Edit > Preferences > Profiles.

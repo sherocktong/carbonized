@@ -43,34 +43,3 @@
 
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/
 ```
-
-## shell
-
-- <https://github.com/chriskempson/base16-shell/blob/master/scripts/base16-default-dark.sh> `376294b`
-
-```
-2,3d |
-
-%s/Base 16 Default Light/carbonized-light/e |
-%s/base-16-default-light/carbonized-light/e |
-%s/Base 16 Default Dark/carbonized-dark/e |
-%s/base-16-default-dark/carbonized-dark/e |
-
-%s/181818/1f1f1f/e |
-%s/282828/363636/e |
-%s/383838/54524d/e |
-%s/585858/6b6863/e |
-%s/b8b8b8/9e9a91/e |
-%s/d8d8d8/aba69d/e |
-%s/e8e8e8/e8e2d5/e |
-%s/f8f8f8/fff8eb/e |
-
-%s/ab4642/bf5062/e |
-%s/dc9656/d47546/e |
-%s/f7ca88/ab982b/e |
-%s/a1b56c/609456/e |
-%s/86c1b9/3e9486/e |
-%s/7cafc2/6393ab/e |
-%s/ba8baf/8572ab/e |
-%s/a16946/ab7298/e
-```
