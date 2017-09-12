@@ -27,7 +27,3 @@ For easy management of Vim colour schemes (and other plugins), try a plugin mana
 To activate the carbonized theme, add one of the following lines to your `vimrc`:
 - `colorscheme carbonized-light`
 - `colorscheme carbonized-dark`
-
-### step 3 (optional): configure terminal
-
-To use this theme in the terminal (including terminal vim), see [nightshell](https://github.com/nightsense/nightshell).

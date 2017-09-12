@@ -36,21 +36,12 @@ let s:cterm0B = "02"
 let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
-if exists('base16colorspace') && base16colorspace == "256"
   let s:cterm01 = "18"
   let s:cterm02 = "19"
   let s:cterm04 = "20"
   let s:cterm06 = "21"
   let s:cterm09 = "16"
   let s:cterm0F = "17"
-else
-  let s:cterm01 = "10"
-  let s:cterm02 = "11"
-  let s:cterm04 = "12"
-  let s:cterm06 = "13"
-  let s:cterm09 = "09"
-  let s:cterm0F = "14"
-endif
 
 " Neovim terminal colours
 if has("nvim")
@@ -129,7 +120,7 @@ call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("Visual",        "", s:gui01, "", s:cterm01, "", "")
 call <sid>hi("VisualNOS",     "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06, "", "")
+call <sid>hi("WildMenu",      s:gui00, s:gui06, s:cterm00, "", "", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "", "")
