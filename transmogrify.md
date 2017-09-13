@@ -1,3 +1,5 @@
+## vim
+
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-light.vim> `c1c3e6c`
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
 
@@ -42,4 +44,38 @@
 %s/VisualNOS",     s:gui08, "", s:cterm08, "", ""/VisualNOS",     "", s:gui01, "", s:cterm01, "none"/ |
 
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/
+```
+
+## nightshell
+
+- <https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-default-light.sh> `376294b`
+- <https://raw.githubusercontent.com/chriskempson/base16-shell/master/scripts/base16-default-dark.sh> `376294b`
+
+```
+2,4d |
+
+%s#18/18/18#1f/1f/1f# |
+%s#28/28/28#36/36/36# |
+%s#38/38/38#54/52/4d# |
+%s#58/58/58#6b/68/63# |
+%s#b8/b8/b8#9e/9a/91# |
+%s#d8/d8/d8#ab/a6/9d# |
+%s#e8/e8/e8#e8/e2/d5# |
+%s#f8/f8/f8#ff/f8/eb# |
+%s#ab/46/42#bf/50/62# |
+%s#dc/96/56#d4/75/46# |
+%s#f7/ca/88#ab/98/2b# |
+%s#a1/b5/6c#60/94/56# |
+%s#86/c1/b9#3e/94/86# |
+%s#7c/af/c2#63/93/ab# |
+%s#ba/8b/af#85/72/ab# |
+%s#a1/69/46#ab/72/98# |
+
+%s/181818/1f1f1f/ge |
+%s/383838/54524d/g  |
+%s/d8d8d8/aba69d/g  |
+%s/f8f8f8/fff8eb/ge |
+
+call append(123,["",
+"echo -ne '\\e]12;#d47546\\a'"])
 ```
