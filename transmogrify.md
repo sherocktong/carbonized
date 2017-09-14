@@ -10,12 +10,12 @@
 %s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
-%s/282828/363636/ |
+%s/282828/404040/ |
 %s/383838/54524d/ |
-%s/585858/6b6863/ |
-%s/b8b8b8/9e9a91/ |
+%s/585858/615e59/ |
+%s/b8b8b8/aba69d/ |
 %s/d8d8d8/aba69d/ |
-%s/e8e8e8/e8e2d5/ |
+%s/e8e8e8/e3ddd1/ |
 %s/f8f8f8/fff8eb/ |
 
 %s/ab4642/bf5062/ |
@@ -39,7 +39,7 @@
 
 %s/statusline",    s:gui04, s:gui02, s:cterm04, s:cterm02/statusline",    s:gui00, s:gui09, s:cterm00, s:cterm09/ |
 
-%s/StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01/StatusLineNC",  s:gui04, s:gui01, s:cterm04, s:cterm01/ |
+%s/StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01/StatusLineNC",  s:gui05, s:gui01, s:cterm05, s:cterm01/ |
 
 %s/Visual",        "", s:gui02, "", s:cterm02/Visual",        s:gui06, s:gui02, s:cterm06, s:cterm02/ |
 
@@ -47,7 +47,7 @@
 
 %s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/ |
 
-normal gg=Ggg
+normal =gg
 ```
 
 ## nightshell
