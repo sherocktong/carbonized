@@ -10,12 +10,12 @@
 %s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
-%s/282828/404040/ |
+%s/282828/363636/ |
 %s/383838/54524d/ |
-%s/585858/615e59/ |
-%s/b8b8b8/aba69d/ |
-%s/d8d8d8/aba69d/ |
-%s/e8e8e8/e3ddd1/ |
+%s/585858/6b6863/ |
+%s/b8b8b8/9e9a91/ |
+%s/d8d8d8/bfbab0/ |
+%s/e8e8e8/e0dacf/ |
 %s/f8f8f8/fff8eb/ |
 
 %s/ab4642/bf5062/ |
