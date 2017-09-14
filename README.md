@@ -38,3 +38,7 @@ To make this theme work in terminal vim, install [nightshell](https://github.com
 ```
 git clone https://github.com/nightsense/nightshell ~/.nightshell
 ```
+
+## notes
+
+This theme was created using Chris Kempson's [base16](https://github.com/chriskempson/base16-vim) as a template.
