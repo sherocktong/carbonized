@@ -1,7 +1,7 @@
 " vi:syntax=vim
 
 if !has('gui_running')
-execute "silent !/bin/sh $HOME/.nightshell/carbonized-dark"
+  execute "silent !/bin/sh $HOME/.nightshell/carbonized-dark"
 endif
 
 " GUI color definitions
@@ -33,12 +33,12 @@ let s:cterm0B = "02"
 let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
-  let s:cterm01 = "18"
-  let s:cterm02 = "19"
-  let s:cterm04 = "20"
-  let s:cterm06 = "21"
-  let s:cterm09 = "16"
-  let s:cterm0F = "17"
+let s:cterm01 = "18"
+let s:cterm02 = "19"
+let s:cterm04 = "20"
+let s:cterm06 = "21"
+let s:cterm09 = "16"
+let s:cterm0F = "17"
 
 " Neovim terminal colours
 if has("nvim")

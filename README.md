@@ -30,3 +30,11 @@ To activate the carbonized theme, add one of the following lines to your `vimrc`
 - `colorscheme carbonized-dark`
 
 To assign themes to specific intervals of the day, try the [night-and-day](https://github.com/nightsense/night-and-day) plugin.
+
+## terminal vim
+
+To make this theme work in terminal vim, install [nightshell](https://github.com/nightsense/nightshell) to `~/.nightshell`:
+
+```
+git clone https://github.com/nightsense/nightshell ~/.nightshell
+```

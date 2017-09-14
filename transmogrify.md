@@ -4,7 +4,9 @@
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
 
 ```
-3,10d | 4,6d | 35d | 41,48d |
+3,10d | 4d | 5d | 36d | 42,49d |
+4s#.*/#execute "silent !/bin/sh $HOME/.nightshell/# |
+4s/\.sh// |
 %s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
@@ -43,7 +45,9 @@
 
 %s/VisualNOS",     s:gui08, "", s:cterm08, "", ""/VisualNOS",     "", s:gui01, "", s:cterm01, "none"/ |
 
-%s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/
+%s/WildMenu",      s:gui08, s:gui0A, s:cterm08, ""/WildMenu",      s:gui00, s:gui06, s:cterm00, s:cterm06/ |
+
+normal gg=Ggg
 ```
 
 ## nightshell
