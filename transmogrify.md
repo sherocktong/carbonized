@@ -33,7 +33,7 @@
 
 %s/Identifier",   s:gui08, "", s:cterm08, "", "none/Identifier",   s:gui09, "", s:cterm09, "", "bold/ |
 
-%s/LineNr",        s:gui03, s:gui01, s:cterm03/LineNr",        s:gui04, s:gui01, s:cterm04/ |
+%s/LineNr",        s:gui03, s:gui01, s:cterm03/LineNr",        s:gui05, s:gui01, s:cterm05/ |
 
 %s/Search",        s:gui03, s:gui0A, s:cterm03, s:cterm0A,  "", "")/Search",        s:gui00, s:gui0A, s:cterm00, s:cterm0A,  "", "")/ |
 
