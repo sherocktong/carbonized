@@ -4,7 +4,7 @@
 - <https://github.com/chriskempson/base16-vim/blob/master/colors/base16-default-dark.vim> `c1c3e6c`
 
 ```
-3,9d |
+3,10d | 4,6d | 35d | 41,48d |
 %s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
