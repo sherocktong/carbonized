@@ -6,12 +6,12 @@ endif
 
 " GUI color definitions
 let s:gui00 = "1f1f1f"
-let s:gui01 = "363636"
-let s:gui02 = "54524d"
-let s:gui03 = "75726c"
-let s:gui04 = "949088"
-let s:gui05 = "bab5ab"
-let s:gui06 = "e0dace"
+let s:gui01 = "333333"
+let s:gui02 = "524f4b"
+let s:gui03 = "706d67"
+let s:gui04 = "99958d"
+let s:gui05 = "bfbab0"
+let s:gui06 = "e6dfd3"
 let s:gui07 = "fff8eb"
 let s:gui08 = "bf5062"
 let s:gui09 = "d47546"
@@ -49,13 +49,13 @@ if has("nvim")
   let g:terminal_color_4 =  "#6393ab"
   let g:terminal_color_5 =  "#8572ab"
   let g:terminal_color_6 =  "#3e9486"
-  let g:terminal_color_7 =  "#bab5ab"
-  let g:terminal_color_8 =  "#75726c"
+  let g:terminal_color_7 =  "#bfbab0"
+  let g:terminal_color_8 =  "#706d67"
   let g:terminal_color_9 =  "#d47546"
-  let g:terminal_color_10 = "#363636"
-  let g:terminal_color_11 = "#54524d"
-  let g:terminal_color_12 = "#949088"
-  let g:terminal_color_13 = "#e0dace"
+  let g:terminal_color_10 = "#333333"
+  let g:terminal_color_11 = "#524f4b"
+  let g:terminal_color_12 = "#99958d"
+  let g:terminal_color_13 = "#e6dfd3"
   let g:terminal_color_14 = "#ab7298"
   let g:terminal_color_15 = "#fff8eb"
   let g:terminal_color_background = g:terminal_color_0
@@ -122,7 +122,7 @@ call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui09, s:cterm00, s:cterm09, "", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
-call <sid>hi("LineNr",        s:gui05, s:gui01, s:cterm05, s:cterm01, "", "")
+call <sid>hi("LineNr",        s:gui04, s:gui01, s:cterm04, s:cterm01, "", "")
 call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("statusline",    s:gui00, s:gui09, s:cterm00, s:cterm09, "none", "")
 call <sid>hi("StatusLineNC",  s:gui05, s:gui01, s:cterm05, s:cterm01, "none", "")

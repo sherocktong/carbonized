@@ -10,12 +10,12 @@
 %s/base16-default/carbonized/ |
 
 %s/181818/1f1f1f/ |
-%s/282828/363636/ |
-%s/383838/54524d/ |
-%s/585858/75726c/ |
-%s/b8b8b8/949088/ |
-%s/d8d8d8/bab5ab/ |
-%s/e8e8e8/e0dace/ |
+%s/282828/333333/ |
+%s/383838/524f4b/ |
+%s/585858/706d67/ |
+%s/b8b8b8/99958d/ |
+%s/d8d8d8/bfbab0/ |
+%s/e8e8e8/e6dfd3/ |
 %s/f8f8f8/fff8eb/ |
 
 %s/ab4642/bf5062/ |
@@ -33,7 +33,7 @@
 
 %s/Identifier",   s:gui08, "", s:cterm08, "", "none/Identifier",   s:gui09, "", s:cterm09, "", "bold/ |
 
-%s/LineNr",        s:gui03, s:gui01, s:cterm03/LineNr",        s:gui05, s:gui01, s:cterm05/ |
+%s/LineNr",        s:gui03, s:gui01, s:cterm03/LineNr",        s:gui04, s:gui01, s:cterm04/ |
 
 %s/Search",        s:gui03, s:gui0A, s:cterm03, s:cterm0A,  "", "")/Search",        s:gui00, s:gui0A, s:cterm00, s:cterm0A,  "", "")/ |
 
