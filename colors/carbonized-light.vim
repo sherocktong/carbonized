@@ -6,12 +6,12 @@ endif
 
 " GUI color definitions
 let s:gui00 = "fff8eb"
-let s:gui01 = "e6dfd3"
+let s:gui01 = "e8e2d5"
 let s:gui02 = "bfbab0"
 let s:gui03 = "99958d"
 let s:gui04 = "706d67"
 let s:gui05 = "524f4b"
-let s:gui06 = "333333"
+let s:gui06 = "303030"
 let s:gui07 = "1f1f1f"
 let s:gui08 = "bf5062"
 let s:gui09 = "d47546"
@@ -52,10 +52,10 @@ if has("nvim")
   let g:terminal_color_7 =  "#524f4b"
   let g:terminal_color_8 =  "#99958d"
   let g:terminal_color_9 =  "#d47546"
-  let g:terminal_color_10 = "#e6dfd3"
+  let g:terminal_color_10 = "#e8e2d5"
   let g:terminal_color_11 = "#bfbab0"
   let g:terminal_color_12 = "#706d67"
-  let g:terminal_color_13 = "#333333"
+  let g:terminal_color_13 = "#303030"
   let g:terminal_color_14 = "#ab7298"
   let g:terminal_color_15 = "#1f1f1f"
   let g:terminal_color_background = g:terminal_color_0
