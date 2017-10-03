@@ -10,7 +10,9 @@
 <td align="center"><strong>carbonized-<br />dark</strong></td></tr>
 </table>
 
-<h2 id="installation">installation</h2>
+<h2 id="setup">setup</h2>
+
+<h3 id="installation">installation</h3>
 
 <p>While you can install a theme manually (by placing a <a href="https://github.com/nightsense/carbonized/tree/master/colors">theme file</a> in <code class="highlighter-rouge">~/.vim/colors/</code>), a <strong>plugin helper</strong> is recommended.</p>
 
@@ -31,6 +33,8 @@ call plug#end()
 
 <p>Then restart vim and run <code class="highlighter-rouge">PlugUpdate</code> (from the vim command line).</p>
 
+<h3 id="activation">activation</h3>
+
 <p>To activate the carbonized theme, add one of the following lines to your <code class="highlighter-rouge">vimrc</code>:</p>
 
 <ul>
@@ -38,7 +42,7 @@ call plug#end()
   <li><code class="highlighter-rouge">colorscheme carbonized-dark</code></li>
 </ul>
 
-<p>The <code class="highlighter-rouge">background</code> setting doesn’t affect this theme.</p>
+<p>Note that the <code class="highlighter-rouge">background</code> setting doesn’t affect this theme.</p>
 
 <blockquote>
   <p>To assign themes to specific intervals of the day, try the <a href="https://github.com/nightsense/night-and-day">night-and-day</a> plugin.</p>
