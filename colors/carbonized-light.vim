@@ -73,7 +73,7 @@ endif
 " clear old theme, activate new
 hi clear
 syntax reset
-let colors_name = "carbonized-light"
+let g:colors_name = "carbonized-light"
 
 " highlighting function
 fun! <sid>hi(g, gf, gb, cf, cb, a, s)
