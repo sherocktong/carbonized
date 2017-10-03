@@ -62,8 +62,8 @@ call plug#end()
   <thead>
     <tr>
       <th style="text-align: right">hex</th>
-      <th style="text-align: center">base colours</th>
-      <th style="text-align: center">accent colours</th>
+      <th style="text-align: center">base</th>
+      <th style="text-align: center">accent</th>
       <th style="text-align: left">hex</th>
     </tr>
   </thead>
