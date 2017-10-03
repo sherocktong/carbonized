@@ -123,7 +123,8 @@ call plug#end()
 
 <h3 id="syntax-highlighting-logic">syntax highlighting logic</h3>
 
-<p><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" /> <strong>Red</strong>, the colour of alarm, is used for <strong>critical messages</strong> like errors, warnings, misspellings, and diff deletions.</p>
+<p><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" />
+<strong>Red</strong>, the colour of alarm, is used for <strong>critical messages</strong> like errors, warnings, misspellings, and diff deletions.</p>
 
 <table>
   <thead>
