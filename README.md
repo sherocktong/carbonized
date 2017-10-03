@@ -12,26 +12,24 @@
 
 <h2 id="installation">installation</h2>
 
-<p>While you can install a vim theme manually (by placing a <a href="https://github.com/nightsense/carbonized/tree/master/colors">colourscheme file</a> in <code class="highlighter-rouge">~/.vim/colors/</code>), a <strong>plugin helper</strong> is strongly recommended.</p>
+<p>While you can install a theme manually (by placing a <a href="https://github.com/nightsense/carbonized/tree/master/colors">theme file</a> in <code class="highlighter-rouge">~/.vim/colors/</code>), a <strong>plugin helper</strong> is recommended.</p>
 
-<blockquote>
-  <p>If you don’t have a preferred helper yet, consider trying <a href="https://github.com/junegunn/vim-plug">vim-plug</a>, which can be installed with:</p>
+<p>If you don’t have a preferred helper, consider trying <a href="https://github.com/junegunn/vim-plug">vim-plug</a>, which can be installed with:</p>
 
-  <div class="highlighter-rouge"><pre class="highlight"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+<div class="highlighter-rouge"><pre class="highlight"><code>curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 </code></pre>
-  </div>
+</div>
 
-  <p>To install carbonized via vim-plug, add the following to the top of your <code class="highlighter-rouge">vimrc</code>:</p>
+<p>To install carbonized via vim-plug, add the following to the top of your <code class="highlighter-rouge">vimrc</code>:</p>
 
-  <div class="highlighter-rouge"><pre class="highlight"><code>call plug#begin('~/.vim/plugged')
+<div class="highlighter-rouge"><pre class="highlight"><code>call plug#begin('~/.vim/plugged')
 Plug 'nightsense/carbonized'
 call plug#end()
 </code></pre>
-  </div>
+</div>
 
-  <p>Then restart vim and run <code class="highlighter-rouge">PlugUpdate</code> (from the vim command line).</p>
-</blockquote>
+<p>Then restart vim and run <code class="highlighter-rouge">PlugUpdate</code> (from the vim command line).</p>
 
 <p>To activate the carbonized theme, add one of the following lines to your <code class="highlighter-rouge">vimrc</code>:</p>
 
