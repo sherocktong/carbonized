@@ -123,54 +123,59 @@ call plug#end()
 
 <h3 id="syntax-highlighting-logic">syntax highlighting logic</h3>
 
+<p><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" /> <strong>Red</strong>, the colour of alarm, is used for <strong>critical messages</strong> like errors, warnings, misspellings, and diff deletions.</p>
+
 <table>
   <thead>
     <tr>
       <th style="text-align: left">colour</th>
-      <th style="text-align: left">real-world association</th>
-      <th style="text-align: left">coding role</th>
+      <th style="text-align: left">role</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" /></td>
-      <td style="text-align: left"><strong>red lights/objects</strong> that provide critical information</td>
-      <td style="text-align: left"><strong>critical messages</strong>: errors, warnings, misspellings, diff deletions</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">the colour of <strong>alerts</strong>, providing critical information<br /></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="http://www.colorhexa.com/d47546.png" height="24" width="42" /> </td>
+      <td><strong>orange flames</strong> of fire, which often serves as a preliminary to other activities</td>
+      <td><strong>preliminary elements</strong>: preprocessor commands (which modify data for handling by another program), incremental search (the highlighting of the search term as one types it in, before striking enter to complete it), titles (which precede content), vim question prompts (which precede user-supplied answers), miscapitalized words</td>
     </tr>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/d47546.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>orange flames</strong> of fire, which often serves as a preliminary to other activities</td>
-      <td style="text-align: left"><strong>preliminary elements</strong>: preprocessor commands (which modify data for handling by another program), incremental search (the highlighting of the search term as one types it in, before striking enter to complete it), titles (which precede content), vim question prompts (which precede user-supplied answers), miscapitalized words</td>
+      <td><img src="http://www.colorhexa.com/ab982b.png" height="24" width="42" /> </td>
+      <td><strong>yellow highlighting</strong> that draws attention to important information</td>
+      <td><strong>highlighting</strong> of routine information: search results, task tags (TODO, FIXME, BUG…), diff changes</td>
     </tr>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/ab982b.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>yellow highlighting</strong> that draws attention to important information</td>
-      <td style="text-align: left"><strong>highlighting</strong> of routine information: search results, task tags (TODO, FIXME, BUG…), diff changes</td>
+      <td><img src="http://www.colorhexa.com/609456.png" height="24" width="42" /> </td>
+      <td><strong>green lights/objects</strong> that say “go ahead, proceed with the task at hand”</td>
+      <td><strong>action elements</strong>: statements (if/then, while/do, case…), mode indicator (insert, visual…), “press enter to continue” prompt, diff additions</td>
     </tr>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/609456.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>green lights/objects</strong> that say “go ahead, proceed with the task at hand”</td>
-      <td style="text-align: left"><strong>action elements</strong>: statements (if/then, while/do, case…), mode indicator (insert, visual…), “press enter to continue” prompt, diff additions</td>
+      <td><img src="http://www.colorhexa.com/3e9486.png" height="24" width="42" /> </td>
+      <td>the <strong>common teal</strong>, a very specific type of duck</td>
+      <td><strong>object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…); also, words that are spelled properly but mislocalized (that is, of a foreign type)</td>
     </tr>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/3e9486.png" height="24" width="42" /> </td>
-      <td style="text-align: left">the <strong>common teal</strong>, a very specific type of duck</td>
-      <td style="text-align: left"><strong>object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…); also, words that are spelled properly but mislocalized (that is, of a foreign type)</td>
+      <td><img src="http://www.colorhexa.com/6393ab.png" height="24" width="42" /> </td>
+      <td><strong>sea and sky</strong>: enduring, seemingly unchanging constants of the world</td>
+      <td><strong>constants</strong>: bits of static, concrete information, whether boolean values, integers, floating-point numbers, characters, strings…</td>
     </tr>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/6393ab.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>sea and sky</strong>: enduring, seemingly unchanging constants of the world</td>
-      <td style="text-align: left"><strong>constants</strong>: bits of static, concrete information, whether boolean values, integers, floating-point numbers, characters, strings…</td>
+      <td><img src="http://www.colorhexa.com/8572ab.png" height="24" width="42" /> </td>
+      <td><strong>purple dye</strong>, historically a rare luxury, reserved for special works of art</td>
+      <td><strong>special text</strong>: special characters (standalone or within syntax units), vim tags, debugging statements, rarely-used words</td>
     </tr>
     <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/8572ab.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>purple dye</strong>, historically a rare luxury, reserved for special works of art</td>
-      <td style="text-align: left"><strong>special text</strong>: special characters (standalone or within syntax units), vim tags, debugging statements, rarely-used words</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><img src="http://www.colorhexa.com/ab7298.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>pink blossoms</strong> of springtime, each one a fresh, brand new burst of life</td>
-      <td style="text-align: left"><strong>object names</strong>: names of objects, including variables and functions (by naming objects, they too burst into life)</td>
+      <td><img src="http://www.colorhexa.com/ab7298.png" height="24" width="42" /> </td>
+      <td><strong>pink blossoms</strong> of springtime, each one a fresh, brand new burst of life</td>
+      <td><strong>object names</strong>: names of objects, including variables and functions (by naming objects, they too burst into life)</td>
     </tr>
   </tbody>
 </table>
