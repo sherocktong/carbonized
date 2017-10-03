@@ -123,60 +123,34 @@ call plug#end()
 
 <h3 id="syntax-highlighting-logic">syntax highlighting logic</h3>
 
-<p><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" />
-<strong>Red</strong>, the colour of alarm, is used for <strong>critical messages</strong> like errors, warnings, misspellings, and diff deletions.</p>
+<p><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" /></p>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">colour</th>
-      <th style="text-align: left">role</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"> </td>
-      <td style="text-align: left">the colour of <strong>alerts</strong>, providing critical information<br /></td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Red</strong>, the colour of alarm, is used for <strong>errors and warnings</strong>.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><img src="http://www.colorhexa.com/d47546.png" height="24" width="42" /> </td>
-      <td><strong>orange flames</strong> of fire, which often serves as a preliminary to other activities</td>
-      <td><strong>preliminary elements</strong>: preprocessor commands (which modify data for handling by another program), incremental search (the highlighting of the search term as one types it in, before striking enter to complete it), titles (which precede content), vim question prompts (which precede user-supplied answers), miscapitalized words</td>
-    </tr>
-    <tr>
-      <td><img src="http://www.colorhexa.com/ab982b.png" height="24" width="42" /> </td>
-      <td><strong>yellow highlighting</strong> that draws attention to important information</td>
-      <td><strong>highlighting</strong> of routine information: search results, task tags (TODO, FIXME, BUG…), diff changes</td>
-    </tr>
-    <tr>
-      <td><img src="http://www.colorhexa.com/609456.png" height="24" width="42" /> </td>
-      <td><strong>green lights/objects</strong> that say “go ahead, proceed with the task at hand”</td>
-      <td><strong>action elements</strong>: statements (if/then, while/do, case…), mode indicator (insert, visual…), “press enter to continue” prompt, diff additions</td>
-    </tr>
-    <tr>
-      <td><img src="http://www.colorhexa.com/3e9486.png" height="24" width="42" /> </td>
-      <td>the <strong>common teal</strong>, a very specific type of duck</td>
-      <td><strong>object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…); also, words that are spelled properly but mislocalized (that is, of a foreign type)</td>
-    </tr>
-    <tr>
-      <td><img src="http://www.colorhexa.com/6393ab.png" height="24" width="42" /> </td>
-      <td><strong>sea and sky</strong>: enduring, seemingly unchanging constants of the world</td>
-      <td><strong>constants</strong>: bits of static, concrete information, whether boolean values, integers, floating-point numbers, characters, strings…</td>
-    </tr>
-    <tr>
-      <td><img src="http://www.colorhexa.com/8572ab.png" height="24" width="42" /> </td>
-      <td><strong>purple dye</strong>, historically a rare luxury, reserved for special works of art</td>
-      <td><strong>special text</strong>: special characters (standalone or within syntax units), vim tags, debugging statements, rarely-used words</td>
-    </tr>
-    <tr>
-      <td><img src="http://www.colorhexa.com/ab7298.png" height="24" width="42" /> </td>
-      <td><strong>pink blossoms</strong> of springtime, each one a fresh, brand new burst of life</td>
-      <td><strong>object names</strong>: names of objects, including variables and functions (by naming objects, they too burst into life)</td>
-    </tr>
-  </tbody>
-</table>
+<p><img src="http://www.colorhexa.com/d47546.png" height="24" width="42" /></p>
+
+<p><strong>Orange</strong> is the colour of fire, which serves as a preliminary to many practical activities. Orange is therefore used for <strong>preliminary elements</strong>, such as preprocessor commands (which prepare data to be handled by another program), incremental searching (that is, a search term in the process of being typed), and titles (which are preliminary to content).</p>
+
+<p><img src="http://www.colorhexa.com/ab982b.png" height="24" width="42" /></p>
+
+<p><strong>Yellow</strong>, the classic <strong>highlighting</strong> colour, is applied to various elements to make them easy to spot, including search results, task tags (<code class="highlighter-rouge">TODO</code>, <code class="highlighter-rouge">FIXME</code>, <code class="highlighter-rouge">BUG</code>…), and diff changes.</p>
+
+<p><img src="http://www.colorhexa.com/609456.png" height="24" width="42" /></p>
+
+<p><strong>Green</strong>, the colour that says “go ahead, proceed with the task at hand”, is used for <strong>action elements</strong>, such as statements (if/then, while/do, case…), mode indicators (insert, visual…), and diff additions.</p>
+
+<p><img src="http://www.colorhexa.com/3e9486.png" height="24" width="42" /></p>
+
+<p>The colour <strong>teal</strong> is named after the “common teal”, a kind of duck, thus connecting this colour with the concept of “species”, which is a means of classifying life into very specific types. Teal is therefore used for specifying <strong>object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…).</p>
+
+<p><img src="http://www.colorhexa.com/6393ab.png" height="24" width="42" /></p>
+
+<p><strong>Blue</strong>, a colour of calm stability, is used for <strong>constants</strong>, which come in the form of boolean values, integers, floating-point numbers, characters, and strings.</p>
+
+<p><img src="http://www.colorhexa.com/8572ab.png" height="24" width="42" /></p>
+
+<p><strong>Purple</strong>, often associated with rare purple dyes historically produced for special works of art, is used for <strong>special text</strong>, including special characters (standalone or within syntax units), vim tags, and debugging statements.</p>
+
+<p><img src="http://www.colorhexa.com/ab7298.png" height="24" width="42" /></p>
+
+<p><strong>Pink</strong>, the colour of springtime blossoms, is used for <strong>object names</strong>, including the names of variables and functions. Simply by being named, such objects burst into life, like blossoms.</p>
