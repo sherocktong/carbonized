@@ -154,7 +154,7 @@ hi! link PMenu        Visual
 hi! link PMenuSel     WildMenu
 
 " linear elements
-hi! link CursorLine   ColorColumn
+hi! link CursorColumn ColorColumn
 hi! link DiffChange   ColorColumn
 hi! link FoldColumn   ColorColumn
 hi! link Folded       ColorColumn
@@ -164,7 +164,7 @@ hi! link TabLine      ColorColumn
 hi! link TabLineFill  ColorColumn
 hi! link StatusLine   Cursor
 hi! link TabLineSel   Cursor
-hi! link CursorColumn StatusLineNC
+hi! link CursorLine   StatusLineNC
 
 " red
 hi! link WarningMsg   ErrorMsg
