@@ -132,17 +132,17 @@ call plug#end()
   <tbody>
     <tr>
       <td style="text-align: left"><img src="http://www.colorhexa.com/bf5062.png" height="24" width="42" /></td>
-      <td style="text-align: left"><strong>red lights/objects</strong> that urgently grab one’s attention to provide critical information</td>
+      <td style="text-align: left"><strong>red lights/objects</strong> that harshly attract one’s attention to provide critical information</td>
       <td style="text-align: left"><strong>critical messages</strong>: errors, warnings, misspellings, diff deletions</td>
     </tr>
     <tr>
       <td style="text-align: left"><img src="http://www.colorhexa.com/d47546.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>glowing orange iron</strong> heated for working: the glow is not the goal, but the preliminary to the main event</td>
+      <td style="text-align: left">the <strong>orange flames</strong> of a fire lit for some practical purpose; the fire itself is not the goal, rather it serves as a preliminary to other activities</td>
       <td style="text-align: left"><strong>preliminary elements</strong>: preprocessor commands (which modify data for handling by another program), incremental search (the highlighting of the search term as one types it in, before striking enter to complete it), titles (which precede content), vim question prompts (which precede user-supplied answers), miscapitalized words</td>
     </tr>
     <tr>
       <td style="text-align: left"><img src="http://www.colorhexa.com/ab982b.png" height="24" width="42" /> </td>
-      <td style="text-align: left"><strong>highlighters and sticky notes</strong> that cheerfully grab one’s attention to provide routine information</td>
+      <td style="text-align: left"><strong>highlighters and sticky notes</strong> that lightly attract one’s attention to provide routine information</td>
       <td style="text-align: left"><strong>highlighting</strong> of routine information: search results, task tags (TODO, FIXME, BUG…), diff changes</td>
     </tr>
     <tr>
@@ -153,7 +153,7 @@ call plug#end()
     <tr>
       <td style="text-align: left"><img src="http://www.colorhexa.com/3e9486.png" height="24" width="42" /> </td>
       <td style="text-align: left">the <strong>common teal</strong>, a species of duck (a “species” being a very specific type of life)</td>
-      <td style="text-align: left"><strong>specifying object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…); also, words that are spelled properly but mislocalized (that is, of a foreign type)</td>
+      <td style="text-align: left"><strong>object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…); also, words that are spelled properly but mislocalized (that is, of a foreign type)</td>
     </tr>
     <tr>
       <td style="text-align: left"><img src="http://www.colorhexa.com/6393ab.png" height="24" width="42" /> </td>
@@ -168,7 +168,7 @@ call plug#end()
     <tr>
       <td style="text-align: left"><img src="http://www.colorhexa.com/ab7298.png" height="24" width="42" /> </td>
       <td style="text-align: left">the <strong>pink blossoms</strong> of springtime, each one a fresh, brand new burst of life</td>
-      <td style="text-align: left"><strong>identifiers</strong>: names of objects, including variables and functions (by naming objects, they too burst into life)</td>
+      <td style="text-align: left"><strong>object names</strong>: names of objects, including variables and functions (by naming objects, they too burst into life)</td>
     </tr>
   </tbody>
 </table>

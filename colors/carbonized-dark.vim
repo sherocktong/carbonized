@@ -73,7 +73,7 @@ endif
 " clear old theme, activate new
 hi clear
 syntax reset
-let g:colors_name = "carbonized-dark"
+let colors_name = "carbonized-dark"
 
 " highlighting function
 fun! <sid>hi(g, gf, gb, cf, cb, a, s)
@@ -88,94 +88,103 @@ endfun
 
 "=== HIGHLIGHTING =============================================================
 
-" basic text
+call <sid>hi("Normal"      , s:g05, s:g00, s:t05, s:t00, "none"     , ""   )
+call <sid>hi("Directory"   , s:g05, s:g00, s:t05, s:t00, "bold"     , ""   )
+
 call <sid>hi("Bold"        , ""   , ""   , ""   , ""   , "bold"     , ""   )
 call <sid>hi("Comment"     , s:g03, ""   , s:t03, ""   , "none"     , ""   )
-call <sid>hi("Normal"      , s:g05, s:g00, s:t05, s:t00, "none"     , ""   )
+call <sid>hi("Conceal"     , s:g03, ""   , s:t03, ""   , "none"     , ""   )
+call <sid>hi("NonText"     , s:g03, ""   , s:t03, ""   , "none"     , ""   )
 call <sid>hi("Underlined"  , ""   , ""   , ""   , ""   , "underline", ""   )
+call <sid>hi("Italic",        "", "", "", "", "none", "")
+call <sid>hi("QuickFixLine",  "", s:g01, "", s:t01, "none", "")
 
-" block elements
-call <sid>hi("Cursor",       s:g00, s:g09, s:t00, s:t09, "none"     , ""   )
+call <sid>hi("ColorColumn"  , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("CursorColumn" , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("CursorLine  " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("DiffChange  " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("FoldColumn  " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("Folded      " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("LineNr      " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("SignColumn  " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("TabLine     " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+call <sid>hi("TabLineFill " , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
+
+call <sid>hi("Cursor",           s:g00, s:g09, s:t00, s:t09, "none"     , ""   )
+call <sid>hi("StatusLine",       s:g00, s:g09, s:t00, s:t09, "none"     , ""   )
+call <sid>hi("TabLineSel",       s:g00, s:g09, s:t00, s:t09, "none"     , ""   )
+
 call <sid>hi("CursorLineNr", s:g00, s:g03, s:t00, s:t03, "none"     , ""   )
+call <sid>hi("MatchParen", s:g00, s:g03, s:t00, s:t03, "none"     , ""   )
+
 call <sid>hi("Visual"      , s:g06, s:g02, s:t06, s:t02, "none"     , ""   )
+call <sid>hi("PMenu"      , s:g06, s:g02, s:t06, s:t02, "none"     , ""   )
 call <sid>hi("VisualNOS"   , s:g03, s:g01, s:t03, s:t01, "none"     , ""   )
 
-" linear elements
-call <sid>hi("ColorColumn" , s:g04, s:g01, s:t04, s:t01, "none"     , ""   )
 call <sid>hi("StatusLineNC", s:g05, s:g01, s:t05, s:t01, "none"     , ""   )
 call <sid>hi("VertSplit"   , s:g02, s:g02, s:t02, s:t02, "none"     , ""   )
 call <sid>hi("WildMenu"    , s:g00, s:g06, s:t00, s:t06, "none"     , ""   )
+call <sid>hi("PMenuSel"    , s:g00, s:g06, s:t00, s:t06, "none"     , ""   )
 
-" RED for alarming things (errors, warnings...)
+" RED for critical messages
 call <sid>hi("DiffDelete"  , s:g01, s:g08, s:t01, s:t08, "none"     , ""   )
 call <sid>hi("Error"       , s:g00, s:g08, s:t00, s:t08, "none"     , ""   )
 call <sid>hi("ErrorMsg"    , s:g08, s:g00, s:t08, s:t00, "none"     , ""   )
+call <sid>hi("WarningMsg"    , s:g08, s:g00, s:t08, s:t00, "none"     , ""   )
 call <sid>hi("SpellBad"    , ""   , s:g00, ""   , s:t00, "undercurl", s:g08)
+call <sid>hi("TooLong",       s:g08, "", s:t08, "", "", "")
 
-" ORANGE for preliminary "warmup" things (preprocess, search-typing, titles...)
+" ORANGE for preliminary elements
 call <sid>hi("IncSearch"   , s:g01, s:g09, s:t01, s:t09, "none"     , ""   )
 call <sid>hi("PreProc"     , s:g09, ""   , s:t09, ""   , "none"     , ""   )
+call <sid>hi("Question"     , s:g09, ""   , s:t09, ""   , "none"     , ""   )
+call <sid>hi("Title"     , s:g09, ""   , s:t09, ""   , "none"     , ""   )
 call <sid>hi("SpellCap"    , ""   , s:g00, ""   , s:t00, "undercurl", s:g09)
+call <sid>hi("Macro",         s:g09, "", s:t09, "", "", "")
+call <sid>hi("Define",       s:g09, "", s:t09, "", "none", "")
+call <sid>hi("Include",      s:g09, "", s:t09, "", "", "")
 
-" YELLOW for highlighted things (search results, task tags...)
+" YELLOW for highlighting
 call <sid>hi("DiffText"    , s:g0A, s:g01, s:t0A, s:t01, "none"     , ""   )
+call <sid>hi("Todo"    , s:g0A, s:g01, s:t0A, s:t01, "none"     , ""   )
 call <sid>hi("Search"      , s:g00, s:g0A, s:t00, s:t0A, "none"     , ""   )
 
-" GREEN for "proceed with action" things (statements, mode indicators...)
+" GREEN for action elements
 call <sid>hi("DiffAdd"     , s:g0B, s:g01, s:t0B, s:t01, "none"     , ""   )
 call <sid>hi("Statement"   , s:g0B, ""   , s:t0B, ""   , "none"     , ""   )
+call <sid>hi("ModeMsg"   , s:g0B, ""   , s:t0B, ""   , "none"     , ""   )
+call <sid>hi("MoreMsg"   , s:g0B, ""   , s:t0B, ""   , "none"     , ""   )
+call <sid>hi("Conditional",  s:g0B, "", s:t0B, "", "", "")
+call <sid>hi("Label",        s:g0B, "", s:t0B, "", "", "")
+call <sid>hi("Operator",     s:g0B, "", s:t0B, "", "none", "")
+call <sid>hi("Repeat",       s:g0B, "", s:t0B, "", "", "")
+call <sid>hi("Keyword",      s:g0B, "", s:t0B, "", "", "")
+call <sid>hi("Exception",     s:g0B, "", s:t0B, "", "", "")
 
-" TEAL for object types (int, char...), since "teal" denotes a type of duck
+" TEAL for object types
 call <sid>hi("SpellLocal"  , ""   , s:g00, ""   , s:t00, "undercurl", s:g0C)
 call <sid>hi("Type"        , s:g0C, ""   , s:t0C, ""   , "none"     , ""   )
+call <sid>hi("StorageClass", s:g0A, "", s:t0A, "", "", "")
+call <sid>hi("Structure",    s:g0E, "", s:t0E, "", "", "")
+call <sid>hi("Typedef",      s:g0A, "", s:t0A, "", "", "")
 
-" BLUE for constants (numbers, strings...), since blue is stable and reserved
+" BLUE for constants
 call <sid>hi("Constant"    , s:g0D, ""   , s:t0D, ""   ,     "none" , ""   )
+call <sid>hi("Boolean",      s:g0D, "", s:t0D, "", "", "")
+call <sid>hi("Character",    s:g0D, "", s:t0D, "", "", "")
+call <sid>hi("Float",        s:g0D, "", s:t0D, "", "", "")
+call <sid>hi("Number",       s:g0D, "", s:t0D, "", "", "")
+call <sid>hi("String",       s:g0D, "", s:t0D, "", "", "")
 
-" PURPLE for special text, since purple dye was historically rare
+" PURPLE for special text
+call <sid>hi("Debug",         s:g0E, "", s:t0E, "", "", "")
 call <sid>hi("Special"     , s:g0E, ""   , s:t0E, ""   , "none"     , ""   )
+call <sid>hi("SpecialChar",  s:g0E, "", s:t0E, "", "", "")
 call <sid>hi("SpellRare"   , ""   , s:g00, ""   , s:t00, "undercurl", s:g0E)
+call <sid>hi("SpecialKey"  , s:g0E, ""   , s:t0E, ""   , "none"     , ""   )
+call <sid>hi("Delimiter",    s:g0E, "", s:t0F, "", "", "")
+call <sid>hi("Tag",          s:g0A, "", s:t0A, "", "", "")
 
-" PINK for object names: upon naming, objects spring forth like spring blossoms
+" PINK for object names
 call <sid>hi("Identifier"  , s:g0F, ""   , s:t0F, ""   , "none"     , ""   )
-
-
-"=== LINKS ====================================================================
-
-" basic text
-hi! link Directory    Bold
-hi! link Conceal      Comment
-hi! link NonText      Comment
-hi! link SpecialKey   Comment
-
-" block elements
-hi! link MatchParen   CursorLineNr
-hi! link PMenu        Visual
-hi! link PMenuSel     WildMenu
-
-" linear elements
-hi! link CursorColumn ColorColumn
-hi! link DiffChange   ColorColumn
-hi! link FoldColumn   ColorColumn
-hi! link Folded       ColorColumn
-hi! link LineNr       ColorColumn
-hi! link SignColumn   ColorColumn
-hi! link TabLine      ColorColumn
-hi! link TabLineFill  ColorColumn
-hi! link StatusLine   Cursor
-hi! link TabLineSel   Cursor
-hi! link CursorLine   StatusLineNC
-
-" red
-hi! link WarningMsg   ErrorMsg
-
-" orange
-hi! link Question     PreProc
-hi! link Title        PreProc
-
-" yellow
-hi! link Todo         DiffText
-
-" green
-hi! link ModeMsg      Statement
-hi! link MoreMsg      Statement
+call <sid>hi("Function",     s:g0F, "", s:t0F, "", "", "")
