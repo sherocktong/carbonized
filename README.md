@@ -50,7 +50,12 @@ call plug#end()
 
 <h2 id="terminal-vim">terminal vim</h2>
 
-<p>To make this theme work in terminal vim, install <a href="https://github.com/nightsense/nightshell">nightshell</a> to <code class="highlighter-rouge">~/.nightshell</code>:</p>
+<p>To make this theme work in terminal vim:</p>
+
+<ul>
+  <li>add <code class="highlighter-rouge">set termguicolors</code> to your <code class="highlighter-rouge">vimrc</code></li>
+  <li>install <a href="https://github.com/nightsense/nightshell">nightshell</a> to <code class="highlighter-rouge">~/.nightshell</code>:</li>
+</ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/nightsense/nightshell ~/.nightshell
 </code></pre>
