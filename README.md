@@ -126,7 +126,7 @@ call plug#end()
 <strong>Orange</strong> is the colour of fire, which serves as a preliminary to many practical activities. Orange is therefore used for <strong>preliminary elements</strong>, such as preprocessor commands (which prepare data to be handled by another program), incremental searching (that is, a search term in the process of being typed), and titles (which are preliminary to content).</p>
 
 <p><img src="http://www.colorhexa.com/ab982b.png" height="24" width="42" />
-<strong>Yellow</strong>, the classic <strong>highlighting</strong> colour, is applied to various elements to heighten visibility, including search results, task tags (<code class="highlighter-rouge">TODO</code>, <code class="highlighter-rouge">FIXME</code>, <code class="highlighter-rouge">BUG</code>…), and diff changes.</p>
+<strong>Yellow</strong>, the classic highlighting colour, is used for <strong>highlighted elements</strong>, including search results, task tags (<code class="highlighter-rouge">TODO</code>, <code class="highlighter-rouge">FIXME</code>, <code class="highlighter-rouge">BUG</code>…), and diff changes.</p>
 
 <p><img src="http://www.colorhexa.com/609456.png" height="24" width="42" />
 <strong>Green</strong>, the colour that says “go ahead, proceed with the task at hand”, is used for <strong>action elements</strong>, such as statements (if/then, while/do, case…), mode indicators (insert, visual…), and diff additions.</p>
