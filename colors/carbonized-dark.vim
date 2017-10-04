@@ -104,7 +104,7 @@ cal <sid>h('StatusLine'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('StatusLineTerm'   , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TabLineSel'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 
-" current line number + matc  hing parenthesis
+" current line number + matching parenthesis
 cal <sid>h('CursorLineNr'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
 cal <sid>h('MatchParen'       , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
 
