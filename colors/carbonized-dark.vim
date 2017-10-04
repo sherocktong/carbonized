@@ -184,7 +184,7 @@ cal <sid>h('Label'            , s:gB , ''   , s:tB , ''   , ''          , ''  )
 cal <sid>h('ModeMsg'          , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
 cal <sid>h('MoreMsg'          , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
 cal <sid>h('Operator'         , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
-cal <sid>h('Question'         , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
+cal <sid>h('Question'         , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
 cal <sid>h('Repeat'           , s:gB , ''   , s:tB , ''   , ''          , ''  )
 cal <sid>h('Statement'        , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
 
