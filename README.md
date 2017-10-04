@@ -143,4 +143,4 @@ The colour <strong>teal</strong> is named after the “common teal”, a kind of
 <strong>Purple</strong>, often associated with rare purple dyes historically produced for special works of art, is used for <strong>special text</strong>, including special characters (standalone or within syntax units), vim tags, and debugging statements.</p>
 
 <p><img src="http://www.colorhexa.com/ab7298.png" height="24" width="42" />
-<strong>Pink</strong>, the colour of springtime blossoms, is used for <strong>object names</strong>, including the names of variables and functions. Simply by being named, such objects burst into life, like blossoms.</p>
+<strong>Pink</strong>, the colour of springtime blossoms, is used for <strong>object names</strong>, including the names of variables and functions. To code is to cause countless objects to blossom into existence as one types their names.</p>
