@@ -75,7 +75,7 @@ endif
 " run theme-setting script if using terminal vim
 if !has('gui_running')
   execute 'silent !/bin/sh $HOME/.nightshell/carbonized-dark'
-  autocmd BufEnter * execute 'if !exists("g:colors_name") |
+  autocmd BufEnter * execute 'if !exists("colors_name") |
         \ let colors_name = "carbonized-dark" |
         \ colorscheme carbonized-dark | endif'
 endif
