@@ -72,6 +72,10 @@ endif
 
 "=== OTHER PREPARATION ========================================================
 
+" run theme-setting script if using terminal vim
+if !has('gui_running')
+  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-light'
+endif
 
 " clear old theme, activate new
 hi clear
@@ -215,10 +219,9 @@ call <sid>hi('Identifier'     , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 call <sid>hi('Function'       , s:gF , ''   , s:tF , ''   , ''          , ''  )
 
 
+"=== ========================================================
 
-
-
-" run theme-setting script if using terminal vim
+" =
 if !has('gui_running')
-  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-light'
+  colorscheme carbonized-light'
 endif
