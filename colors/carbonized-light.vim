@@ -116,6 +116,7 @@ cal <sid>h('Conceal'          , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
 cal <sid>h('EndOfBuffer'      , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
 cal <sid>h('Ignore'           , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
 cal <sid>h('NonText'          , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
+cal <sid>h('TermCursorNC'     , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
 
 " highlighted background
 cal <sid>h('ColorColumn'      , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
