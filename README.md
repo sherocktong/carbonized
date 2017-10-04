@@ -131,7 +131,7 @@ call plug#end()
 <strong>Yellow</strong>, the classic highlighting colour, is applied to elements that are not warnings yet should draw attention with high visibility. These <strong>highlighted elements</strong> include search results, task tags (<code class="highlighter-rouge">TODO</code>, <code class="highlighter-rouge">FIXME</code>, <code class="highlighter-rouge">BUG</code>…), and diff changes.</p>
 
 <p><img src="http://www.colorhexa.com/609456.png" height="24" width="42" />
-<strong>Green</strong>, the colour that says “go ahead, proceed with the task at hand”, is used for <strong>action elements</strong>, such as statements (if/then, while/do, case…), mode indicators (insert, visual…), and diff additions.</p>
+<strong>Green</strong>, the colour that says “go ahead, proceed with the task at hand”, is used for positive <strong>action elements</strong>, such as statements (if/then, while/do, case…), mode indicators (insert, visual…), and diff additions.</p>
 
 <p><img src="http://www.colorhexa.com/3e9486.png" height="24" width="42" />
 The colour <strong>teal</strong> is named after the “common teal”, a kind of duck, thus connecting this colour with the concept of “species”, which is a means of classifying life into very specific types. Teal is therefore used for specifying <strong>object types</strong>, such as data type (boolean, integer, string…) or storage class (static, volatile…).</p>
