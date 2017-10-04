@@ -86,7 +86,7 @@ syntax reset
 let colors_name = 'carbonized-light'
 
 " highlighting function
-fun! <sid>hi(x, gf, gb, cf, cb, a, s)
+fun! <sid>h(x, gf, gb, cf, cb, a, s)
   if a:gf != '' | exe 'hi ' . a:x . ' guifg=#'  . a:gf                  | endif
   if a:gb != '' | exe 'hi ' . a:x . ' guibg=#'  . a:gb                  | endif
   if a:cf != '' | exe 'hi ' . a:x . ' ctermfg=' . a:cf                  | endif
@@ -99,122 +99,122 @@ endfun
 "=== BASIC HIGHLIGHTING =======================================================
 
 " cursor + status line + selected tab
-call <sid>hi('Cursor'         , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
-call <sid>hi('StatusLine'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
-call <sid>hi('TabLineSel'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+cal <sid>h('Cursor'         , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+cal <sid>h('StatusLine'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+cal <sid>h('TabLineSel'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 
 " current line number + matching parenthesis
-call <sid>hi('CursorLineNr'   , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
-call <sid>hi('MatchParen'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('CursorLineNr'   , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+cal <sid>h('MatchParen'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
 
 " basic text
-call <sid>hi('Bold'           , ''   , ''   , ''   , ''   , 'bold'      , ''  )
-call <sid>hi('Directory'      , s:g5 , ''   , s:t5 , ''   , 'bold'      , ''  )
-call <sid>hi('Italic'         , ''   , ''   , ''   , ''   , 'italic'    , ''  )
-call <sid>hi('Normal'         , s:g5 , s:g0 , s:t5 , s:t0 , 'none'      , ''  )
-call <sid>hi('Underlined'     , s:g5 , ''   , s:t5 , ''   , 'underline' , ''  )
+cal <sid>h('Bold'           , ''   , ''   , ''   , ''   , 'bold'      , ''  )
+cal <sid>h('Directory'      , s:g5 , ''   , s:t5 , ''   , 'bold'      , ''  )
+cal <sid>h('Italic'         , ''   , ''   , ''   , ''   , 'italic'    , ''  )
+cal <sid>h('Normal'         , s:g5 , s:g0 , s:t5 , s:t0 , 'none'      , ''  )
+cal <sid>h('Underlined'     , s:g5 , ''   , s:t5 , ''   , 'underline' , ''  )
 
 " commented-out text
-call <sid>hi('Comment'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
-call <sid>hi('Conceal'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
-call <sid>hi('EndOfBuffer'    , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
-call <sid>hi('Ignore'         , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
-call <sid>hi('NonText'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
+cal <sid>h('Comment'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
+cal <sid>h('Conceal'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
+cal <sid>h('EndOfBuffer'    , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
+cal <sid>h('Ignore'         , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
+cal <sid>h('NonText'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
 
 " highlighted background
-call <sid>hi('ColorColumn'    , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('CursorColumn'   , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('CursorLine'     , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('QuickFixLine'   , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('StatusLineNC'   , s:g5 , s:g1 , s:t5 , s:t1 , 'none'      , ''  )
-call <sid>hi('TabLineFill'    , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
+cal <sid>h('ColorColumn'    , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
+cal <sid>h('CursorColumn'   , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
+cal <sid>h('CursorLine'     , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
+cal <sid>h('QuickFixLine'   , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
+cal <sid>h('StatusLineNC'   , s:g5 , s:g1 , s:t5 , s:t1 , 'none'      , ''  )
+cal <sid>h('TabLineFill'    , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 
 " muted text on highlighted background
-call <sid>hi('DiffChange'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-call <sid>hi('FoldColumn'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-call <sid>hi('Folded'         , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-call <sid>hi('LineNr'         , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-call <sid>hi('SignColumn'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
-call <sid>hi('TabLine'        , s:g4 , s:g1 , s:g4 , s:t1 , 'none'      , ''  )
-call <sid>hi('VisualNOS'      , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+cal <sid>h('DiffChange'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+cal <sid>h('FoldColumn'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+cal <sid>h('Folded'         , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+cal <sid>h('LineNr'         , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+cal <sid>h('SignColumn'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+cal <sid>h('TabLine'        , s:g4 , s:g1 , s:g4 , s:t1 , 'none'      , ''  )
+cal <sid>h('VisualNOS'      , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 
 " strongly highlighted background
-call <sid>hi('Pmenu'          , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
-call <sid>hi('Visual'         , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
+cal <sid>h('Pmenu'          , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
+cal <sid>h('Visual'         , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
 
 " selected menu item
-call <sid>hi('PmenuSel'       , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
-call <sid>hi('WildMenu'       , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
+cal <sid>h('PmenuSel'       , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
+cal <sid>h('WildMenu'       , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
 
 " solid lines
-call <sid>hi('PmenuSbar'      , s:g3 , s:g3 , s:t3 , s:t3 , 'none'      , ''  )
-call <sid>hi('PmenuThumb'     , s:g4 , s:g4 , s:t4 , s:t4 , 'none'      , ''  )
-call <sid>hi('VertSplit'      , s:g2 , s:g2 , s:t2 , s:t2 , 'none'      , ''  )
+cal <sid>h('PmenuSbar'      , s:g3 , s:g3 , s:t3 , s:t3 , 'none'      , ''  )
+cal <sid>h('PmenuThumb'     , s:g4 , s:g4 , s:t4 , s:t4 , 'none'      , ''  )
+cal <sid>h('VertSplit'      , s:g2 , s:g2 , s:t2 , s:t2 , 'none'      , ''  )
 
 
 "=== SYNTAX HIGHLIGHTING ======================================================
 
 " RED for warning elements
-call <sid>hi('DiffDelete'     , s:g8 , s:g1 , s:t8 , s:t1 , 'none'      , ''  )
-call <sid>hi('Error'          , s:g0 , s:g8 , s:t0 , s:t8 , 'none'      , ''  )
-call <sid>hi('ErrorMsg'       , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
-call <sid>hi('WarningMsg'     , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
-call <sid>hi('SpellBad'       , ''   , ''   , s:t8 , s:t1 , 'undercurl' , s:g8)
-call <sid>hi('TooLong'        , s:g8 , ''   , s:t8 , ''   , ''          , ''  )
+cal <sid>h('DiffDelete'     , s:g8 , s:g1 , s:t8 , s:t1 , 'none'      , ''  )
+cal <sid>h('Error'          , s:g0 , s:g8 , s:t0 , s:t8 , 'none'      , ''  )
+cal <sid>h('ErrorMsg'       , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
+cal <sid>h('WarningMsg'     , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
+cal <sid>h('SpellBad'       , ''   , ''   , s:t8 , s:t1 , 'undercurl' , s:g8)
+cal <sid>h('TooLong'        , s:g8 , ''   , s:t8 , ''   , ''          , ''  )
 
 " ORANGE for preliminary elements
-call <sid>hi('IncSearch'      , s:g1 , s:g9 , s:t1 , s:t9 , 'none'      , ''  )
-call <sid>hi('PreProc'        , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-call <sid>hi('PreCondit'      , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-call <sid>hi('Question'       , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-call <sid>hi('Title'          , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-call <sid>hi('SpellCap'       , ''   , ''   , s:t9 , s:t1 , 'undercurl' , s:g9)
-call <sid>hi('Macro'          , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
-call <sid>hi('Define'         , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-call <sid>hi('Include'        , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
+cal <sid>h('IncSearch'      , s:g1 , s:g9 , s:t1 , s:t9 , 'none'      , ''  )
+cal <sid>h('PreProc'        , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
+cal <sid>h('PreCondit'      , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
+cal <sid>h('Question'       , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
+cal <sid>h('Title'          , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
+cal <sid>h('SpellCap'       , ''   , ''   , s:t9 , s:t1 , 'undercurl' , s:g9)
+cal <sid>h('Macro'          , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
+cal <sid>h('Define'         , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
+cal <sid>h('Include'        , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
 
 " YELLOW for highlighted elements
-call <sid>hi('DiffText'       , s:gA , s:g1 , s:tA , s:t1 , 'none'      , ''  )
-call <sid>hi('Todo'           , s:gA , s:g1 , s:tA , s:t1 , 'none'      , ''  )
-call <sid>hi('Search'         , s:g0 , s:gA , s:t0 , s:tA , 'none'      , ''  )
+cal <sid>h('DiffText'       , s:gA , s:g1 , s:tA , s:t1 , 'none'      , ''  )
+cal <sid>h('Todo'           , s:gA , s:g1 , s:tA , s:t1 , 'none'      , ''  )
+cal <sid>h('Search'         , s:g0 , s:gA , s:t0 , s:tA , 'none'      , ''  )
 
 " GREEN for action elements
-call <sid>hi('DiffAdd'        , s:gB , s:g1 , s:tB , s:t1 , 'none'      , ''  )
-call <sid>hi('Statement'      , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
-call <sid>hi('ModeMsg'        , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
-call <sid>hi('MoreMsg'        , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
-call <sid>hi('Conditional'    , s:gB , ''   , s:tB , ''   , ''          , ''  )
-call <sid>hi('Label'          , s:gB , ''   , s:tB , ''   , ''          , ''  )
-call <sid>hi('Operator'       , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
-call <sid>hi('Repeat'         , s:gB , ''   , s:tB , ''   , ''          , ''  )
-call <sid>hi('Keyword'        , s:gB , ''   , s:tB , ''   , ''          , ''  )
-call <sid>hi('Exception'      , s:gB , ''   , s:tB , ''   , ''          , ''  )
+cal <sid>h('DiffAdd'        , s:gB , s:g1 , s:tB , s:t1 , 'none'      , ''  )
+cal <sid>h('Statement'      , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
+cal <sid>h('ModeMsg'        , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
+cal <sid>h('MoreMsg'        , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
+cal <sid>h('Conditional'    , s:gB , ''   , s:tB , ''   , ''          , ''  )
+cal <sid>h('Label'          , s:gB , ''   , s:tB , ''   , ''          , ''  )
+cal <sid>h('Operator'       , s:gB , ''   , s:tB , ''   , 'none'      , ''  )
+cal <sid>h('Repeat'         , s:gB , ''   , s:tB , ''   , ''          , ''  )
+cal <sid>h('Keyword'        , s:gB , ''   , s:tB , ''   , ''          , ''  )
+cal <sid>h('Exception'      , s:gB , ''   , s:tB , ''   , ''          , ''  )
 
 " TEAL for object types
-call <sid>hi('SpellLocal'     , ''   , ''   , s:tC , s:t1 , 'undercurl' , s:gC)
-call <sid>hi('Type'           , s:gC , ''   , s:tC , ''   , 'none'      , ''  )
-call <sid>hi('StorageClass'   , s:gC , ''   , s:tC , ''   , ''          , ''  )
-call <sid>hi('Structure'      , s:gC , ''   , s:tC , ''   , ''          , ''  )
-call <sid>hi('Typedef'        , s:gC , ''   , s:tC , ''   , ''          , ''  )
+cal <sid>h('SpellLocal'     , ''   , ''   , s:tC , s:t1 , 'undercurl' , s:gC)
+cal <sid>h('Type'           , s:gC , ''   , s:tC , ''   , 'none'      , ''  )
+cal <sid>h('StorageClass'   , s:gC , ''   , s:tC , ''   , ''          , ''  )
+cal <sid>h('Structure'      , s:gC , ''   , s:tC , ''   , ''          , ''  )
+cal <sid>h('Typedef'        , s:gC , ''   , s:tC , ''   , ''          , ''  )
 
 " BLUE for constants
-call <sid>hi('Constant'       , s:gD , ''   , s:tD , ''   , 'none'      , ''  )
-call <sid>hi('Boolean'        , s:gD , ''   , s:tD , ''   , ''          , ''  )
-call <sid>hi('Character'      , s:gD , ''   , s:tD , ''   , ''          , ''  )
-call <sid>hi('Float'          , s:gD , ''   , s:tD , ''   , ''          , ''  )
-call <sid>hi('Number'         , s:gD , ''   , s:tD , ''   , ''          , ''  )
-call <sid>hi('String'         , s:gD , ''   , s:tD , ''   , ''          , ''  )
+cal <sid>h('Constant'       , s:gD , ''   , s:tD , ''   , 'none'      , ''  )
+cal <sid>h('Boolean'        , s:gD , ''   , s:tD , ''   , ''          , ''  )
+cal <sid>h('Character'      , s:gD , ''   , s:tD , ''   , ''          , ''  )
+cal <sid>h('Float'          , s:gD , ''   , s:tD , ''   , ''          , ''  )
+cal <sid>h('Number'         , s:gD , ''   , s:tD , ''   , ''          , ''  )
+cal <sid>h('String'         , s:gD , ''   , s:tD , ''   , ''          , ''  )
 
 " PURPLE for special text
-call <sid>hi('Debug'          , s:gE , ''   , s:tE , ''   , ''          , ''  )
-call <sid>hi('Special'        , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
-call <sid>hi('SpecialChar'    , s:gE , ''   , s:tE , ''   , ''          , ''  )
-call <sid>hi('SpecialComment' , s:gE , ''   , s:tE , ''   , ''          , ''  )
-call <sid>hi('SpellRare'      , ''   , ''   , s:tE , s:t1 , 'undercurl' , s:gE)
-call <sid>hi('SpecialKey'     , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
-call <sid>hi('Delimiter'      , s:gE , ''   , s:tE , ''   , ''          , ''  )
-call <sid>hi('Tag'            , s:gE , ''   , s:tE , ''   , ''          , ''  )
+cal <sid>h('Debug'          , s:gE , ''   , s:tE , ''   , ''          , ''  )
+cal <sid>h('Special'        , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
+cal <sid>h('SpecialChar'    , s:gE , ''   , s:tE , ''   , ''          , ''  )
+cal <sid>h('SpecialComment' , s:gE , ''   , s:tE , ''   , ''          , ''  )
+cal <sid>h('SpellRare'      , ''   , ''   , s:tE , s:t1 , 'undercurl' , s:gE)
+cal <sid>h('SpecialKey'     , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
+cal <sid>h('Delimiter'      , s:gE , ''   , s:tE , ''   , ''          , ''  )
+cal <sid>h('Tag'            , s:gE , ''   , s:tE , ''   , ''          , ''  )
 
 " PINK for object names
-call <sid>hi('Identifier'     , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
-call <sid>hi('Function'       , s:gF , ''   , s:tF , ''   , ''          , ''  )
+cal <sid>h('Identifier'     , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
+cal <sid>h('Function'       , s:gF , ''   , s:tF , ''   , ''          , ''  )
