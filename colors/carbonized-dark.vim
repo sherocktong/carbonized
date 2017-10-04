@@ -220,11 +220,3 @@ call <sid>hi('Tag'            , s:gE , ''   , s:tE , ''   , ''          , ''  )
 " PINK for object names
 call <sid>hi('Identifier'     , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 call <sid>hi('Function'       , s:gF , ''   , s:tF , ''   , ''          , ''  )
-
-
-"=== ========================================================
-
-" =
-if !has('gui_running')
-  colorscheme carbonized-dark'
-endif
