@@ -70,7 +70,7 @@ if has('nvim')
 endif
 
 
-"=== OTHER PREPARATION ========================================================
+"=== GENERAL PREPARATION ======================================================
 
 " run theme-setting script if using terminal vim
 if !has('gui_running')
@@ -99,13 +99,13 @@ endfun
 "=== BASIC HIGHLIGHTING =======================================================
 
 " cursor + status line + selected tab
-call <sid>hi('Cursor'         , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , '')
-call <sid>hi('StatusLine'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , '')
-call <sid>hi('TabLineSel'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , '')
+call <sid>hi('Cursor'         , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+call <sid>hi('StatusLine'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+call <sid>hi('TabLineSel'     , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 
 " current line number + matching parenthesis
-call <sid>hi('CursorLineNr'   , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , '')
-call <sid>hi('MatchParen'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , '')
+call <sid>hi('CursorLineNr'   , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
+call <sid>hi('MatchParen'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
 
 " basic text
 call <sid>hi('Bold'           , ''   , ''   , ''   , ''   , 'bold'      , ''  )
