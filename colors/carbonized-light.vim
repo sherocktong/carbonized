@@ -61,12 +61,6 @@ if has('nvim')
   let g:terminal_color_13 = '#303030'
   let g:terminal_color_14 = '#ab7298'
   let g:terminal_color_15 = '#1f1f1f'
-  let g:terminal_color_background = g:terminal_color_0
-  let g:terminal_color_foreground = g:terminal_color_7
-  if &background == 'light'
-    let g:terminal_color_background = g:terminal_color_7
-    let g:terminal_color_foreground = g:terminal_color_2
-  endif
 endif
 
 
@@ -100,6 +94,7 @@ endfun
 
 " cursor + status line + selected tab
 cal <sid>h('Cursor'           , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+cal <sid>h('TermCursor'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('StatusLine'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('StatusLineTerm'   , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TabLineSel'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
