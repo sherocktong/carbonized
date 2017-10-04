@@ -125,32 +125,30 @@ call <sid>hi('NonText'        , s:g3 , ''   , s:t3 , ''   , 'none'      , ''  )
 call <sid>hi('ColorColumn'    , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 call <sid>hi('CursorColumn'   , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 call <sid>hi('CursorLine'     , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('FoldColumn'     , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('Folded'         , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 call <sid>hi('QuickFixLine'   , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 call <sid>hi('SignColumn'     , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
-call <sid>hi('TabLine'        , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
+call <sid>hi('StatusLineNC'   , s:g5 , s:g1 , s:t5 , s:t1 , 'none'      , ''  )
 call <sid>hi('TabLineFill'    , ''   , s:g1 , ''   , s:t1 , 'none'      , ''  )
 
 " muted text on highlighted background
 call <sid>hi('DiffChange'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+call <sid>hi('FoldColumn'     , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+call <sid>hi('Folded'         , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 call <sid>hi('LineNr'         , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
+call <sid>hi('TabLine'        , s:g4 , s:g1 , s:g4 , s:t1 , 'none'      , ''  )
+call <sid>hi('VisualNOS'      , s:g4 , s:g1 , s:t4 , s:t1 , 'none'      , ''  )
 
-" popup menu + selection block
-call <sid>hi('Pmenu'          , s:g5 , s:g2 , s:t5 , s:t2 , 'none'      , ''  )
-call <sid>hi('Visual'         , s:g5 , s:g2 , s:t5 , s:t2 , 'none'      , ''  )
+" strongly highlighted background
+call <sid>hi('Pmenu'          , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
+call <sid>hi('Visual'         , s:g6 , s:g2 , s:t6 , s:t2 , 'none'      , ''  )
 
 " selected menu item
 call <sid>hi('PmenuSel'       , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
 call <sid>hi('WildMenu'       , s:g0 , s:g5 , s:t0 , s:t5 , 'none'      , ''  )
 
-" dimmed inactive elements
-call <sid>hi('StatusLineNC'   , s:g5 , s:g1 , s:t5 , s:t1 , 'none'      , ''  )
-call <sid>hi('VisualNOS'      , s:g3 , s:g1 , s:t3 , s:t1 , 'none'      , ''  )
-
 " solid lines
 call <sid>hi('PmenuSbar'      , s:g3 , s:g3 , s:t3 , s:t3 , 'none'      , ''  )
-call <sid>hi('PmenuThumb'     , s:g1 , s:g1 , s:t1 , s:t1 , 'none'      , ''  )
+call <sid>hi('PmenuThumb'     , s:g4 , s:g4 , s:t4 , s:t4 , 'none'      , ''  )
 call <sid>hi('VertSplit'      , s:g2 , s:g2 , s:t2 , s:t2 , 'none'      , ''  )
 
 
@@ -161,7 +159,7 @@ call <sid>hi('DiffDelete'     , s:g8 , s:g1 , s:t8 , s:t1 , 'none'      , ''  )
 call <sid>hi('Error'          , s:g0 , s:g8 , s:t0 , s:t8 , 'none'      , ''  )
 call <sid>hi('ErrorMsg'       , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
 call <sid>hi('WarningMsg'     , s:g8 , s:g0 , s:t8 , s:t0 , 'none'      , ''  )
-call <sid>hi('SpellBad'       , ''   , s:g0 , ''   , s:t0 , 'undercurl' , s:g8)
+call <sid>hi('SpellBad'       , ''   , ''   , s:t8 , s:t1 , 'undercurl' , s:g8)
 call <sid>hi('TooLong'        , s:g8 , ''   , s:t8 , ''   , ''          , ''  )
 
 " ORANGE for preliminary elements
@@ -170,7 +168,7 @@ call <sid>hi('PreProc'        , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
 call <sid>hi('PreCondit'      , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
 call <sid>hi('Question'       , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
 call <sid>hi('Title'          , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
-call <sid>hi('SpellCap'       , ''   , s:g0 , ''   , s:t0 , 'undercurl' , s:g9)
+call <sid>hi('SpellCap'       , ''   , ''   , s:t9 , s:t1 , 'undercurl' , s:g9)
 call <sid>hi('Macro'          , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
 call <sid>hi('Define'         , s:g9 , ''   , s:t9 , ''   , 'none'      , ''  )
 call <sid>hi('Include'        , s:g9 , ''   , s:t9 , ''   , ''          , ''  )
@@ -193,7 +191,7 @@ call <sid>hi('Keyword'        , s:gB , ''   , s:tB , ''   , ''          , ''  )
 call <sid>hi('Exception'      , s:gB , ''   , s:tB , ''   , ''          , ''  )
 
 " TEAL for object types
-call <sid>hi('SpellLocal'     , ''   , ''   , ''   , ''   , 'undercurl' , s:gC)
+call <sid>hi('SpellLocal'     , ''   , ''   , s:tC , s:t1 , 'undercurl' , s:gC)
 call <sid>hi('Type'           , s:gC , ''   , s:tC , ''   , 'none'      , ''  )
 call <sid>hi('StorageClass'   , s:gC , ''   , s:tC , ''   , ''          , ''  )
 call <sid>hi('Structure'      , s:gC , ''   , s:tC , ''   , ''          , ''  )
@@ -212,7 +210,7 @@ call <sid>hi('Debug'          , s:gE , ''   , s:tE , ''   , ''          , ''  )
 call <sid>hi('Special'        , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
 call <sid>hi('SpecialChar'    , s:gE , ''   , s:tE , ''   , ''          , ''  )
 call <sid>hi('SpecialComment' , s:gE , ''   , s:tE , ''   , ''          , ''  )
-call <sid>hi('SpellRare'      , ''   , s:g0 , ''   , s:t0 , 'undercurl' , s:gE)
+call <sid>hi('SpellRare'      , ''   , ''   , s:tE , s:t1 , 'undercurl' , s:gE)
 call <sid>hi('SpecialKey'     , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
 call <sid>hi('Delimiter'      , s:gE , ''   , s:tE , ''   , ''          , ''  )
 call <sid>hi('Tag'            , s:gE , ''   , s:tE , ''   , ''          , ''  )
