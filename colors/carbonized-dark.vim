@@ -7,11 +7,6 @@
 
 "=== SET VARIABLES ============================================================
 
-" run theme-setting script if using terminal vim
-if !has('gui_running')
-  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-dark'
-endif
-
 " GUI colours
 let s:g0 = '1f1f1f'
 let s:g1 = '303030'
@@ -81,7 +76,7 @@ endif
 " clear old theme, activate new
 hi clear
 syntax reset
-let g:colors_name = 'carbonized-dark'
+let colors_name = 'carbonized-dark'
 
 " highlighting function
 fun! <sid>hi(x, gf, gb, cf, cb, a, s)
@@ -218,3 +213,12 @@ call <sid>hi('Tag'            , s:gE , ''   , s:tE , ''   , ''          , ''  )
 " PINK for object names
 call <sid>hi('Identifier'     , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 call <sid>hi('Function'       , s:gF , ''   , s:tF , ''   , ''          , ''  )
+
+
+
+
+
+" run theme-setting script if using terminal vim
+if !has('gui_running')
+  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-dark'
+endif
