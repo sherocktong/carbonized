@@ -7,6 +7,11 @@
 
 "=== SET VARIABLES ============================================================
 
+" run theme-setting script if using terminal vim
+if !has('gui_running')
+  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-dark'
+endif
+
 " GUI colours
 let s:g0 = '1f1f1f'
 let s:g1 = '303030'
@@ -72,10 +77,6 @@ endif
 
 "=== OTHER PREPARATION ========================================================
 
-" run theme-setting script if using terminal vim
-if !has('gui_running')
-  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-dark'
-endif
 
 " clear old theme, activate new
 hi clear
