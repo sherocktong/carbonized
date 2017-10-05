@@ -50,15 +50,7 @@ call plug#end()
 
 <h2 id="terminal-vim">terminal vim</h2>
 
-<p>To make this theme work in terminal vim, install <a href="https://github.com/nightsense/nightshell">nightshell</a> to <code class="highlighter-rouge">~/.nightshell</code>:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/nightsense/nightshell ~/.nightshell
-</code></pre>
-</div>
-
-<p>nightshell is just a collection of scripts for setting terminal colours. carbonized will automatically run the required script when vim is launched inside a terminal.</p>
-
-<p><strong>neovim users</strong> should add <code class="highlighter-rouge">set termguicolors</code> to their configuration.</p>
+<p>See the <a href="https://github.com/nightsense/nightshell">nightshell</a> repository, which allows carbonized to be used in a variety of terminal applications.</p>
 
 <h2 id="palette">palette</h2>
 
