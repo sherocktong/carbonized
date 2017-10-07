@@ -5,7 +5,7 @@
 <h2 id="screenshots">screenshots</h2>
 
 <table>
-<tr><td align="center"><strong>carbonized-<br />dark</strong></td><td align="center"><strong>carbonized-<br />light</strong></td></tr>
+<tr><td align="center"><strong>carbonized-dark</strong></td><td align="center"><strong>carbonized-light</strong></td></tr>
 <tr>
 <td><img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="288" /></td>
 <td align="center"><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="288" /></td>
