@@ -69,9 +69,9 @@ endif
 " run theme-setting script if using terminal vim
 if !has('gui_running')
   execute 'silent !/bin/sh $HOME/.nightshell/carbonized-dark'
-"  autocmd CursorMoved * execute 'if !exists("colors_name") |
-"        \ let colors_name = "carbonized-dark" |
-"        \ colorscheme carbonized-dark | endif'
+  autocmd CursorMoved * execute 'if !exists("colors_name") |
+        \ let colors_name = "carbonized-dark" |
+        \ colorscheme carbonized-dark | endif'
 endif
 
 " clear old theme, activate new
