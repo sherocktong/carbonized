@@ -5,9 +5,18 @@
 <h2 id="screenshots">screenshots</h2>
 
 <table>
-<tr></tr><tr><td align="center"><strong>carbonized-<br />light</strong></td>
-<td align="center"><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="288" /> <img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="288" /></td>
-<td align="center"><strong>carbonized-<br />dark</strong></td></tr>
+  <thead>
+    <tr>
+      <th style="text-align: center">carbonized-dark</th>
+      <th style="text-align: center">carbonized-light</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="288" /></td>
+      <td style="text-align: center"><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="288" /></td>
+    </tr>
+  </tbody>
 </table>
 
 <blockquote>
