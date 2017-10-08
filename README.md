@@ -60,7 +60,7 @@ call plug#end()
 
 <h2 id="palette">palette</h2>
 
-<p>carbonized consists of 8 theme-distinct <strong>base colours</strong>, used for most interface elements, and 8 nightsense-theme-standard <strong>accent colours</strong>, used for syntax highlighting.</p>
+<p>carbonized consists of 8 theme-distinct <strong>base colours</strong>, used for most interface elements, and 8 standard <strong>accent colours</strong> (common to the “nightsense theme family”), used for syntax highlighting.</p>
 
 <blockquote>
   <ul>
