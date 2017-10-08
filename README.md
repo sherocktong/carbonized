@@ -75,8 +75,8 @@ call plug#end()
         <li>the additional 6 aforementioned fine-tuned hues</li>
       </ul>
     </li>
-    <li>discrete intervals were also used for tuning colour values (1/12) and saturations (1/24)</li>
-    <li>the <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-73-head">ISO 3:1 contrast standard</a> is met by nearly all text/background combinations (exceptions being made for some transient-highlighted backgrounds, such as cursorcolumn/cursorline)</li>
+    <li>discrete intervals were also used for tuning colour saturations (1/24) and values (1/12)</li>
+    <li>the <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-73-head">ISO 3:1 contrast standard</a> is met by nearly all text/background combinations, exceptions being made for some transient-highlighted backgrounds (e.g. cursorcolumn, cursorline)</li>
   </ul>
 </blockquote>
 
