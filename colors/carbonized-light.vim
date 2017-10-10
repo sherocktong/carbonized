@@ -80,6 +80,7 @@ set background=light
 augroup ThemeSet
   autocmd!
   autocmd CursorMoved * execute 'if !exists("colors_name") |
+    \ let colors_name = "carbonized-light" |
     \ colorscheme carbonized-light | else |
     \ augroup ThemeSet | autocmd! | augroup END | endif'
 augroup END
