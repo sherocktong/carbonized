@@ -67,8 +67,10 @@ endif
 "=== OTHER PREPARATION ========================================================
 
 " run theme-setting script if using terminal vim
-if !has('gui_running')
-  execute 'silent !/bin/sh $HOME/.nightshell/carbonized-light'
+if filereadable(expand('~/.nightshell/carbonized-light'))
+  if !has('gui_running')
+    execute 'silent !/bin/sh $HOME/.nightshell/carbonized-light'
+  endif
 endif
 
 " clear old theme
