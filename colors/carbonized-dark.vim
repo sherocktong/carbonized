@@ -96,7 +96,7 @@ fun! <sid>h(x, gf, gb, cf, cb, a, s)
   if a:s  != '' | exe 'hi ' . a:x . ' guisp=#'  . a:s                   | endif
 endfun
 
-hi Terminal guibg=#2b2b2b
+hi Terminal guibg=#2b2b2b guifg=#b5b5aa
 
 
 "=== BASIC HIGHLIGHTING =======================================================

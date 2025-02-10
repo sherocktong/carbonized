@@ -224,6 +224,7 @@ cal <sid>h('Tag'              , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
 cal <sid>h('Function'         , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 cal <sid>h('Identifier'       , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 
+hi Terminal guibg=#fffff0 guifg=#75756e
 
 "=== OPTIONS ==================================================================
 
