@@ -8,7 +8,7 @@
 "=== SET COLOUR VARIABLES =====================================================
 
 " GUI colours
-let s:g0 = 'fffff0'
+let s:g0 = 'f0f0dd'
 let s:g1 = 'f0f0e1'
 let s:g2 = 'b5b5aa'
 let s:g3 = '9e9e95'
@@ -45,7 +45,7 @@ let s:tF = '14'
 
 " neovim colours
 if has('nvim')
-  let g:terminal_color_0 =  '#fffff0'
+  let g:terminal_color_0 =  '#f0f0dd'
   let g:terminal_color_1 =  '#f55050'
   let g:terminal_color_2 =  '#219e21'
   let g:terminal_color_3 =  '#d4ac35'
@@ -224,7 +224,7 @@ cal <sid>h('Tag'              , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
 cal <sid>h('Function'         , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 cal <sid>h('Identifier'       , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 
-hi Terminal guibg=#fffff0 guifg=#75756e
+hi Terminal guibg=#f0f0dd guifg=#75756e
 
 "=== OPTIONS ==================================================================
 
