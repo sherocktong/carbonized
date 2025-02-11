@@ -13,7 +13,7 @@ let s:g1 = 'f0f0e1'
 let s:g2 = 'b5b5aa'
 let s:g3 = '9e9e95'
 let s:g4 = '8a8a81'
-let s:g5 = '75757f'
+let s:g5 = '4c4f69'
 let s:g6 = '3b3b37'
 let s:g7 = '2b2b2b'
 let s:g8 = 'f55050'
@@ -52,7 +52,7 @@ if has('nvim')
   let g:terminal_color_4 =  '#468dd4'
   let g:terminal_color_5 =  '#a26fbf'
   let g:terminal_color_6 =  '#1b9e9e'
-  let g:terminal_color_7 =  '#75757f'
+  let g:terminal_color_7 =  '#4c4f69'
   let g:terminal_color_8 =  '#9e9e95'
   let g:terminal_color_9 =  '#e06a26'
   let g:terminal_color_10 = '#f0f0e1'
@@ -224,7 +224,7 @@ cal <sid>h('Tag'              , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
 cal <sid>h('Function'         , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 cal <sid>h('Identifier'       , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 
-hi Terminal guibg=#f0f0dd guifg=#75757f
+hi Terminal guibg=#f0f0dd guifg=#4c4f69
 
 "=== OPTIONS ==================================================================
 
