@@ -96,8 +96,6 @@ fun! <sid>h(x, gf, gb, cf, cb, a, s)
   if a:s  != '' | exe 'hi ' . a:x . ' guisp=#'  . a:s                   | endif
 endfun
 
-hi Terminal guibg=#2b2b2b guifg=#b5b5aa
-
 
 "=== BASIC HIGHLIGHTING =======================================================
 
@@ -107,6 +105,7 @@ cal <sid>h('StatusLine'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('StatusLineTerm'   , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TabLineSel'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TermCursor'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+cal <sid>h('Terminal'         , s:g5 , s:g0 , s:t5 , s:t0 , 'none'      , ''  )
 
 " line numbers
 cal <sid>h('CursorLineNr'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )

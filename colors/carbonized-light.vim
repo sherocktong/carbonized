@@ -105,6 +105,7 @@ cal <sid>h('StatusLine'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('StatusLineTerm'   , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TabLineSel'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TermCursor'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
+cal <sid>h('Terminal'         , s:g5 , s:g0 , s:t5 , s:t0 , 'none'      , ''  )
 
 " line numbers
 cal <sid>h('CursorLineNr'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )
@@ -223,8 +224,6 @@ cal <sid>h('Tag'              , s:gE , ''   , s:tE , ''   , 'none'      , ''  )
 " PINK for object names
 cal <sid>h('Function'         , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
 cal <sid>h('Identifier'       , s:gF , ''   , s:tF , ''   , 'none'      , ''  )
-
-hi Terminal guibg=#f0f0dd guifg=#4c4f69
 
 "=== OPTIONS ==================================================================
 
