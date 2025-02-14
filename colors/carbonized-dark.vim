@@ -98,6 +98,15 @@ endfun
 
 
 "=== BASIC HIGHLIGHTING =======================================================
+hi! link Terminal Normal
+hi! link LineNrAbove LineNr
+hi! link LineNrBelow LineNr
+hi! link CurSearch Search
+hi! link CursorLineFold CursorLine
+hi! link CursorLineSign CursorLine
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
+hi! link PopupSelected PmenuSel
 
 " cursor + status line + selected tab
 cal <sid>h('Cursor'           , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
@@ -105,7 +114,7 @@ cal <sid>h('StatusLine'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('StatusLineTerm'   , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TabLineSel'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
 cal <sid>h('TermCursor'       , s:g0 , s:g9 , s:t0 , s:t9 , 'none'      , ''  )
-cal <sid>h('Terminal'         , s:g5 , s:g0 , s:t5 , s:t0 , 'none'      , ''  )
+" cal <sid>h('Terminal'         , s:g5 , s:g0 , s:t5 , s:t0 , 'none'      , ''  )
 
 " line numbers
 cal <sid>h('CursorLineNr'     , s:g0 , s:g3 , s:t0 , s:t3 , 'none'      , ''  )

@@ -6,6 +6,15 @@
 
 
 "=== SET COLOUR VARIABLES =====================================================
+hi! link Terminal Normal
+hi! link LineNrAbove LineNr
+hi! link LineNrBelow LineNr
+hi! link CurSearch Search
+hi! link CursorLineFold CursorLine
+hi! link CursorLineSign CursorLine
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
+hi! link PopupSelected PmenuSel
 
 " GUI colours
 let s:g0 = 'f0f0dd'
