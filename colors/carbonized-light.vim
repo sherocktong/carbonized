@@ -97,7 +97,7 @@ fun! <sid>h(x, gf, gb, cf, cb, a, s)
 endfun
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-  let g:terminal_ansi_colors = ['#f0f0dd', '#f55050', '#219e21', '#d4ac35', '#468dd4', '#a26fbf', '#1b9e9e', '#4c4f69', '#9e9e95', '#e06a26', '#f0f0e1', '#b5b5aa', '#8a8a81', '#3b3b37', '#d46a84', '#2b2b2b']
+  let g:terminal_ansi_colors = [g:terminal_color_0, g:terminal_color_1, g:terminal_color_2, g:terminal_color_3, g:terminal_color_4, g:terminal_color_5, g:terminal_color_6, g:terminal_color_7, g:terminal_color_8, g:terminal_color_9, g:terminal_color_10, g:terminal_color_11, g:terminal_color_12, g:terminal_color_13, g:terminal_color_14, g:terminal_color_15]
 endif
 
 hi! link Terminal Normal

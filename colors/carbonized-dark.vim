@@ -96,6 +96,9 @@ fun! <sid>h(x, gf, gb, cf, cb, a, s)
   if a:s  != '' | exe 'hi ' . a:x . ' guisp=#'  . a:s                   | endif
 endfun
 
+if (has('termguicolors') && &termguicolors) || has('gui_running')
+  let g:terminal_ansi_colors = [g:terminal_color_0, g:terminal_color_1, g:terminal_color_2, g:terminal_color_3, g:terminal_color_4, g:terminal_color_5, g:terminal_color_6, g:terminal_color_7, g:terminal_color_8, g:terminal_color_9, g:terminal_color_10, g:terminal_color_11, g:terminal_color_12, g:terminal_color_13, g:terminal_color_14, g:terminal_color_15]
+endif
 
 "=== BASIC HIGHLIGHTING =======================================================
 hi! link Terminal Normal
