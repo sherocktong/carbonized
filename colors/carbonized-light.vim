@@ -6,15 +6,6 @@
 
 
 "=== SET COLOUR VARIABLES =====================================================
-hi! link Terminal Normal
-hi! link LineNrAbove LineNr
-hi! link LineNrBelow LineNr
-hi! link CurSearch Search
-hi! link CursorLineFold CursorLine
-hi! link CursorLineSign CursorLine
-hi! link MessageWindow Pmenu
-hi! link PopupNotification Todo
-hi! link PopupSelected PmenuSel
 
 " GUI colours
 let s:g0 = 'f0f0dd'
@@ -105,7 +96,19 @@ fun! <sid>h(x, gf, gb, cf, cb, a, s)
   if a:s  != '' | exe 'hi ' . a:x . ' guisp=#'  . a:s                   | endif
 endfun
 
+if (has('termguicolors') && &termguicolors) || has('gui_running')
+  let g:terminal_ansi_colors = ['#f0f0dd', '#f55050', '#219e21', '#d4ac35', '#468dd4', '#a26fbf', '#1b9e9e', '#4c4f69', '#9e9e95', '#e06a26', '#f0f0e1', '#b5b5aa', '#8a8a81', '#3b3b37', '#d46a84', '#2b2b2b']
+endif
 
+hi! link Terminal Normal
+hi! link LineNrAbove LineNr
+hi! link LineNrBelow LineNr
+hi! link CurSearch Search
+hi! link CursorLineFold CursorLine
+hi! link CursorLineSign CursorLine
+hi! link MessageWindow Pmenu
+hi! link PopupNotification Todo
+hi! link PopupSelected PmenuSel
 "=== BASIC HIGHLIGHTING =======================================================
 
 " cursor + status line + selected tab
